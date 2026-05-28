@@ -1,0 +1,61 @@
+Vielleicht ist ein Fischaugenglasobjektiv etwas überteuert für eine Nestkiste.
+Du lernst immer wieder etwas.
+Ich hätte wahrscheinlich besser gewusst, da ich bereits einen mit einem "normalen" Objektiv gebaut habe.
+Ich werde während des Wochenendes mehr darüber veröffentlichen, als ich das zweite安装中，可能是“正常”的镜头略显过剩。我已经建造了一个，所以我知道该怎么做。周末的时候我会安装第二个，并发布更多相关内容。
+Lass uns sagen, dass die Vögel im Jahr 2015 eine bessere Internetverbindung haben werden als ich.
+Oder zumindest ist das der Plan.
+Der Behälter, der bereits ein Nest hat, lebt vom WLAN im Haus ab.
+Der andere wird noch ein paar Änderungen brauchen, um online zu sein.
+Ok, also habe ich den neuen Nestbehälter tagsüber aufgehängt. Das ist, wie er aussieht, an seinem Netzmast im Garten.
+Aber lass uns einen Schritt rückwärts gehen. "Was ist eigentlich drin?" höre ich niemanden fragen.
+Im oberen Teil befindet sich eines dieser ESP32-Kameraschaltpläne mit einer Fischaugenglaskamera und einer IR-Lichtquelle, die ich mir von einem Raspberry Pi-Kamera-Modul geschnappt habe.
+Der Grund für die seltsame Form dieses Kunststoffbehälters ist der drehbare Seitenbereich des Nestbehälters. Ich habe ihn so gekauft und konnte ihn nicht modifizieren, deshalb musste ich um ihn herum entwerfen.
+Da es im Garten keine Elektrizität gibt, wird das Ganze durch eine Solarzelle und eine 2600mAh 18650-Batterie betrieben.
+Ich habe die Batterie oder den Ladegerät nicht fotografiert, aber hier ist ein Bild des Solarzellenmoduls.
+Der graue Behälter, der an der Seite des Nestbehälters hängt, ist der Aufenthaltsort der Batterie.
+Bei voller Ladung bietet es mir eine Betriebsdauer von etwa 4 Stunden.
+Ich nenne dies ein特征. So bekommen die Vögel Privatsphäre ebenfalls.
+Zunächst war ich nicht sicher, ob das Internet in unserem Garten ausreichend für diese Anordnung wäre. Die alten Zugangspunkte, die ich letztes Herbst ausgetauscht habe, wären dafür nicht ausgereicht gewesen.
+Aber die neuen decken diesen Bereich ausgezeichnet.
+Das wäre fast ein Pech, da ich mir vorgenommen hatte, einen TP-Link cpe210 auf dem Dach anzubringen und ihn nach unten ins Gartenbecken zu richten.
+Ich könnte das auch tun, wenn ich mehr Kamera-Nestkisten einrichte. Insbesondere in Bereichen, die weiter vom Haus entfernt liegen, könnte ich es brauchen.
+Jetzt ist das Kamera-System ausgeschaltet, was ich noch nicht genau wissen kann. Es ging umgerechnet nur eine Stunde nach Sonnenuntergang aus.
+Vielleicht hat es 3 Stunden vor Sonnenuntergang aufgrund mangelnder Lichtintensität die Batterie nicht mehr aufladen können.
+Vielleicht konnte es sich in etwas weniger als der Hälfte eines Tages nicht vollständig aufladen.
+Ich glaube, ich werde morgen sehen, was passiert.
+Ich habe keine Telemetrie für die Batterie. Dies könnte ich in einer zukünftigen Revision hinzufügen.
+Einige weitere Sensoren wären auch schön, denke ich.
+Und vielleicht eine Batterie, die laut Papier mindestens die entire Nacht durchhalten kann.
+Und ein anderes Objektiv.
+Fischaugenglas ist übertrieben.
+Aber ich surfe bereits auf Digikey nach Komponenten, sodass ich mir vielleicht eine eigene PCB für diesen spezifischen Fall bauen könnte.
+Oder nicht. Wir werden sehen.
+Und es ist immer noch nicht ansprechbar.
+Gut.
+Gemäß den richtigen Solarzellen auf dem Haus ist die Sonne nur etwa 90 Minuten wahrhaftig am Himmel.
+Lassen wir es noch eine Stunde oder zwei haben, um zu sehen, was es tut(nicht).
+Noch nicht ansprechbar.
+Nichts ist je einfach.
+Es stellt sich heraus, dass der USB-C Breakout, den ich für die Anschlusskarte zum Akkuauflader verwandt habe, die 5V-Leitung und GND vertauscht hatte, wie es auf der Silkscreen-Bezeichnung zu sehen war.
+Die Leitungen wurden getauscht und jetzt habe ich eine Lademaßnahme.
+Das ESP ging nicht sofort online, lassen wir es ein paar Minuten haben.
+Ein Stunden später ist es immer noch nicht ansprechbar.
+Es scheint, dass es einen Neustart-Schleifenzyklus macht und die Tasmota-Reset-Funktion aktiviert.
+Ich nehme an, das Modul ist einfach scheiße. Ich habe jetzt ein größeres bestellt, hoffend, dass dies die Lösung ist.
+Schau, was ich im Werkstatt gefunden habe.
+Es ist ein 24V-Modul. Leider ist die Sonne so tief (und teilweise durch einen Baum verdeckt), dass es kaum noch etwas liefert, sobald ich einen Lastanschluss tue.
+Also muss ich wohl bis morgen warten, um herauszufinden, ob es ausreichend für diese Anordnung ist oder ob ich den besseren Modul, den ich bestellt habe, benötige.
+Gemäß Amazon habe ich das Modul 2021 gekauft und es sollte maximal 12V bei 1,2A Lieferstrom liefern.
+Also könnte es sein, dass mit diesem Modul etwas nicht stimmt oder mein Multimeter fehlerhaft ist, oder sie haben den Artikel aktualisiert.
+Gute Neuigkeiten für alle!
+Sie haben den Artikel aktualisiert, und das, was ich habe, funktioniert nicht.
+Beide alte und neue Titel des Artikels bezeichnen es als ein 12V 10W-Modul.
+Dies ist der Grund, warum ich alte Emails nicht lösche.
+Hey, schaut mal: Das Ding war vor etwa einer Stunde etwa eine halbe Minute wieder online.
+Vielleicht hat das Modul die Batterie nur für 38 Sekunden Betriebladung mit einem Trickle-Lastanschluss aufgeladen. Das hat es nur zwei Stunden überstanden.
+Gerade ist es wolkenlos. Daher bin ichunsicher, ob das (vermutlich defekte) Solarmodul ausreichend Energie erzeugen kann, um irgendetwas zu erreichen.
+Lassen wir es darauf ankommen.
+Aktualisierung: Ich habe das neue Modul installiert, und es scheint nun zu funktionieren.
+Es könnte noch immer absterben, sobald die Sonne untergeht, aber lassen wir es darauf ankommen.
+Funashek: Ich verwende die Ping-Integration in Home Assistant, um zu überprüfen, ob es online ist oder nicht.
+Der Durchschnitts往返时间是102 ms. Nicht schlecht, nicht schlimm.

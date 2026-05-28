@@ -1,0 +1,61 @@
+Perhaps using a fish-eye lens in a nest box might be overkill.
+Live long, learn long.
+Since I have already done one with a "ordinary" lens, I should be even more clear about it.
+I will install the second ready-made nest box over the weekend, and at that time, I will release more information.
+To put it that way, in 2015, birds had faster internet speeds than me.
+At least, that is currently planned.
+Now there is a nest box that is connected to the home's wireless network.
+Another nest box will need to get online, and that will require some effort.
+Alright, I've hung the new nest box during the day. This is how it looks in the garden.
+But let's take a moment to revisit it. "What is inside, after all?" It seems no one has asked.
+At the top is an ESP32 camera board with a fisheye lens camera, along with an infrared LED light that I removed from a Raspberry Pi camera.
+The shape of that plastic box is peculiar because the side panels can rotate. When I bought it, it was like this, and couldn't be modified, so I had to design it based on this condition.
+Because there is no power source in the garden, the entire装置 requires power from a solar panel and a 2600 mAh 18650 lithium-ion battery.   Note: The word "装置" (zhuāngzhì) can mean many different things depending on the context. If you could provide more context, I could give a more precise translation.
+I didn't take pictures of the battery or the charger, but this is a photo of the solar panel.
+The gray box hanging on the side of the nesting box contains batteries.
+Fully charged, it can run for approximately 4 hours.
+I call this a "special feature," so that the birds can have a bit of privacy as well.
+At first, I wasn't sure if the network in the garden would be strong enough to support this setup; the old access points I replaced last autumn for sure weren't up to the task.
+But the coverage of the new access point is fine.
+Now things have turned out well, for I had originally planned to install a TP-Link CPE210 on the roof, pointing downwards towards the garden.
+If I were to build more nest boxes with cameras in the future, I might still do so, especially in places that are far from the house, where I might need it.
+Now, the camera has gone offline for reasons I'm not yet clear on. It stopped working just an hour after sunset.
+Perhaps due to insufficient light, charging stopped three hours before sunset.
+Perhaps half a day is not enough time for it to charge fully.
+Just see how things shape up tomorrow.
+I don't have telemetry data for the battery. I might add this feature in future versions.
+I think it would be better if there could be a few more sensors.
+Perhaps we also need to include a battery, at least theoretically allowing this thing to last through an entire night.
+Oh, we need to change the lens as well.
+A fish-eye lens is really using a bull's strength to kill a chicken.
+But I have already browsed for components on Digikey, so I might customize a circuit board specifically for this situation.
+It might not. We'll see at the time.
+And it is also in an offline state.
+Great.
+Based on the orientation of the solar panels installed on the house, the timeframe during which they can actually receive sunlight is approximately 90 minutes.
+Wait another one or two hours to see if there's any activity (or lack thereof).
+Still in offline status.
+Alas, there is nothing easy in this world.
+Originally, the 5V line and GND line on the USB-C splitter I used to connect the battery charger were printed in reverse.
+After swapping the line, the charging indicator light came on.
+ESP didn't go live right away; let's wait a few more minutes.
+An hour passed, and it was still offline.
+It seems it got stuck in a reboot loop, triggering Tasmota's reset function.
+It seems this board is really junk. I've ordered a bigger one and hope it will solve the problem.
+See what I discovered in my studio.
+This is a 24-volt solar panel. Unfortunately, the sun was too low (and there was also a tree blocking it), and the voltage dropped significantly as soon as I loaded it up.
+It seems I will have to wait until tomorrow to know if this solar panel is sufficient, or if I need the ordered better-performing solar panel.
+The information on Amazon shows that this solar panel was bought in 2021, with a maximum output voltage of 12 volts and a maximum output current of 1.2 amperes.
+So, either there is something wrong with this solar panel, or there is an issue with my multimeter, or they have changed the product page.
+Hello everyone, we have some good news!
+They changed the product page; the one I have here is defective.
+The titles of both the new and old product pages call it a 12-volt, 10-watt solar panel.
+This is why I don't delete old emails.
+Hey, look: this thing reconnected about an hour ago, but only for less than a minute.
+Perhaps the solar panels charged the battery just enough to run for 38 seconds. That wouldn't take more than two hours.
+Guess what: It's cloudy today! So I'm not sure if that solar panel (which might be broken) can generate enough power to do its job.
+Wait and see.
+Latest update: The new solar panels have been installed, and they now seem to be working properly.
+Perhaps it will give up after the sun sets, but let's wait and see.
+Interestingly, I am using Home Assistant's ping integration feature to monitor whether it is online.
+The average round-trip time is 102 milliseconds. It's not particularly good or bad.

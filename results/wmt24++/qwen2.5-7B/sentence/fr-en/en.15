@@ -1,0 +1,26 @@
+Imagine a very long webpage with many sections (for example, specifications on a single HTML page). If the user requests a specific section (for example, `page.html#section7`), what would happen if the web server streamed just that section first, and then the rest?
+The translation of "Ordre du flux :" from French to English is:  "Flow order:"
+The French phrase "début du document HTML jusqu'à <body>" translates to English as:  "From the start of the HTML document until <body>"
+The sentence "HTML pour la section 7" translates to "HTML for Section 7" in English.
+The translation of the given French sentence to English is:  "3. HTML for sections 1, 2, 3, etc."
+The browser would then ensure to insert sections 1 to 6 above section 7 on the web page.
+Does it seem clear to you? Could it be useful?
+What I want to achieve is the fastest possible rendering of the linked section (#section7) without having to reimplement anything with JavaScript. I just want to have a super long HTML document, but with the fastest possible rendering of the linked sections. This should work with plain HTML.
+The content could be streamed in this manner, then the browser would inject each <contents> into its <div>.   Note: The tags <contents> and <div> in the original sentence are not standard HTML tags. It's possible that these should be specific HTML elements or placeholders for content. If you meant to use specific tags like `<span>`, `<p>`, etc., please let me know!
+The text you provided appears to be an HTML code snippet rather than a sentence in French to be translated. The code `<div id=sec1></div>` defines a division or section in an HTML document with an ID of "sec1". There's no French sentence here to translate into English. If you have a French sentence you'd like translated, please provide it!
+The given text is an HTML code snippet and not a French sentence to translate. If you meant to provide a French sentence to be translated into English, please provide the correct sentence, and I'll be happy to help with the translation.
+The French abbreviation "etc." is already an acronym for "et cetera" in English, so the translation is simply "etc."
+The given text is an HTML code snippet and not a French sentence to translate. If you intended to provide a French sentence for translation, please provide it, and I'll be happy to help with the translation. For now, there's nothing to translate in "div id=sec7 section 7…".
+It looks like you've provided some HTML-like tags with a French sentence inside, but the content is not visible as it's enclosed in `<contents for=sec1>` and `</contents>`. Could you please provide the actual French sentence you'd like translated?
+It looks like you've provided an HTML-like code snippet rather than a French sentence to translate. The text `<contents for=sec2>section 2…</contents>` is not a complete sentence but rather a fragment of HTML or similar markup language. Could you please provide the actual French sentence you'd like translated?
+The sentence "etc." is an abbreviation that stands for "et cetera" in French, which translates to "and the rest" or "and so on" in English. So, if you are referring to using it as part of a list or statement, it remains "etc." in English, without translating it fully:  Original: etc. Translated: etc.
+It would be streamed out of order, but the browser would assemble the HTML document as if it were streamed in order.
+Here's the translation of the provided French sentence into English:  "@user22 You can reorganize the documents like this even without JS. You cannot use the URL hash if you want the server to do something, but you can use query string parameters to tell the server which section you want to see first. To reorganize the parts, you have the choice between:"  If there are any specific options you'd like to include after "between:", please provide them, and I'll complete the translation.
+The translation of "Utiliser des feuilles de style en cascade" from French to English is:  "To use cascading style sheets"
+The English translation of "Utiliser un modèle avec des emplacements" is:  "To use a model with positions"
+@user23 Yes. The problem is that the visual order (what the user sees) does not match the DOM order. It could be useful to have an HTML feature that allows streaming out of order, and the browser would then reorganize the DOM content into the correct order.
+But the location-based approach seems promising. I'll give it a try.
+@user22 Oh, do you want the browser to correct the order of the DOM?
+@user23 Yes, that's the idea. Section 7 would be streamed first solely to allow the user to see it as soon as possible. It would be great if this could be done without affecting the DOM order, so that the browser can ensure that the DOM order obtained corresponds to the visual order.
+In other words, stream section 7 first, but ensure that the final result (both DOM and visual) is as if all sections had been streamed in order.
+@user22 @user23 Take a look at PHOOOS without JS: https://github.com/niutech/phooos

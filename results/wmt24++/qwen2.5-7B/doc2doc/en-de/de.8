@@ -1,0 +1,61 @@
+Möglicherweise ist eine Fischaugenglaskamera etwas übertreiben für einen Nestkasten.
+Du lebst und lernt.
+Ich hätte wahrscheinlich besser Bescheid gewusst, nachdem ich schon einen mit einem "normalen" Glaskern gebaut habe.
+Ich werde während des Wochenendes mehr darüber veröffentlichen, wenn ich den zweiten, den ich gebaut habe, installiere.
+Lassen Sie uns einfach sagen, dass die Vögel im Jahr 2015 eine bessere Internetverbindung haben werden als ich.
+Oder zumindest ist das der Plan.
+Die Box, die bereits einen Nestplatz enthält, lebt vom WLAN im Haus.
+Die andere wird noch etwas Arbeit benötigen, um online zu sein.
+In Ordnung, also habe ich den neuen Nestplatz tagsüber aufgehängt. Das ist, wie er in seiner Netzposition im Garten aussehen wird.
+Aber lasst uns ein wenig rückwärts springen. „Was ist eigentlich drin?“ Ich höre niemand fragen.
+In der Oberseite befindet sich eines dieser ESP32-Kamerasets mit einer Fischaugenglaskamera und einer IR-Lampe, die ich von einem Raspberry Pi Kameraset gestohlen habe.
+Der seltsame Umfang dieses Kunststoffbehälters ist auf den drehbaren Seitenbereich des Nistplatzes zurückzuführen. Ich habe ihn so gekauft, dass ich ihn nicht verändern konnte, daher musste ich darum herum entwerfen.
+Da es im Garten kein elektrisches Stromnetz gibt, wird der gesamte Systembetrieb über eine Solarzelle und eine 2600mAh 18650-Akku versorgt.
+Ich habe die Akku und den Ladegeräteteil nicht fotografiert, aber hier ist ein Bild der Zelle.
+Der graue Behälter, der an der Seite des Nistplatzes hängt, beherbergt die Akku.
+Auf einer vollständigen Ladestellung bietet es mir etwa vier Stunden Betriebsdauer.
+Das nenne ich eine Funktion. Damit haben die Vögel auch ihre Privatsphäre.
+Anfangs war ich unsicher, ob das Internet in unserem Garten ausreichend wäre für diese Ausstattung. Die alten Access Points, die ich letzten Herbst ausgetauscht habe, wären dafür nicht ausgereicht gewesen.
+Die neuen jedoch decken diesen Bereich problemlos ab.
+Das wäre allerdings fast ein Pech gewesen, da ich geplant hatte, einen TP-Link cpe210 auf dem Dach anzubringen und auf den Garten einzurichten.
+Ich könnte das vielleicht tun, wenn ich mehr Kameraschachteln einrichte. Insbesondere in Bereichen weiter vom Haus entfernt, wäre es nötig.
+Nun, aus Gründen, die ich noch nicht ganz kenne, ist die Kamera momentan nicht online. Sie ging umgerechnet eine Stunde nach Sonnenuntergang aus.
+Möglicherweise hat sie sich 3 Stunden vor Sonnenuntergang aufgrund mangelnder Beleuchtung nicht mehr aufladen können.
+Möglicherweise konnte sie nicht in knapp dem halben Tag vollständig aufladen.
+Morgen werde ich sehen, was passiert.
+Ich habe leider keine Telemetriedaten für die Akku. Das könnte ich in einer zukünftigen Revision hinzufügen.
+Einen paar zusätzliche Sensoren wäre sicherlich nett zu haben.
+Und vielleicht eine Akku, die laut Papier zumindest die Sache über Nacht betreiben kann.
+Ja, und eine andere Linse.
+Fischaugenglaser ist deutlich zu viel.
+Aber ich surfte gerade durch Digikey für Bauteile, also könnte ich mich vielleicht einen eigenständigen PCB für genau diesen Fall bauen.
+Oder nicht. Wir werden sehen.
+Aaaand es ist immer noch offline.
+Großartig.
+Nach den richtigen Solarteilen auf dem Haus ist die Sonne nur etwa 90 Minuten wirklich auf.
+Lass es noch eine Stunde oder zwei laufen, um zu sehen, was es (nicht) tut.
+Noch immer offline.
+Niemandem ist etwas leicht.
+Es stellte sich heraus, dass der USB-C-Breakout, den ich zum Anschließen an den Akku-Steckdose benutzt habe, die 5V- und die GND-Signalleitungen auf dem Silkscreen vertauscht hatte.
+Tauschte die Leitungen und jetzt hab ich ein Lademaufblendlicht.
+Das ESP ging nicht sofort online, lassen wir es ein paar Minuten lang laufen.
+Eine Stunde später ist es immer noch offline.
+Es scheint einen Reboot-Loop zu haben und den Reset-Funktion von Tasmota auszulöst.
+Scheint also der Panzer einfach scheiße zu sein. Ich habe jetzt einen größeren bestellt, hoffe, dass dies funktioniert.
+Was ich in meiner Werkstatt gefunden habe.
+Es ist ein 24V-Panel. Leider ist die Sonne so tief (und teilweise durch ein Baum gesperrt), dass es beinahe komplett verschwindet, sobald ich eine Last drauflege.
+Also werde ich wohl bis morgen warten müssen, um herauszufinden, ob es für diese Installation ausreichend ist oder ob ich das bessere Panel brauche, das ich bestellt habe.
+Nachdem ich nachgeschaut habe auf Amazon, habe ich das Panel im Jahr 2021 gekauft und es sollte eine maximale Ausgabe von 12V bei einer maximalen Stromstärke von 1.2A liefern.
+Either es gibt etwas mit diesem Panel oder meinem Multimeter nicht stimmt, oder sie haben die Produktbeschreibung geändert.
+Gute Nachrichten für alle!
+Die Beschreibung wurde geändert, und das, was ich habe, ist kaputt.
+Beide alte und neue Beschreibungen nennen es ein 12V 10W Panel.
+Darum lösche ich keine alten E-Mails.
+Aha, schau mal: Das Ding war vor etwa einer Stunde noch mal für etwa half ein Minute online.
+Vielleicht hat das Panel die Batterie so lange aufgeladen, dass es 38 Sekunden Betrieb ermöglicht hat. Das hat das ganze über zwei Stunden gedauert.
+Geduld ist der Schlüssel: Heute ist es wolkig. Daher bin ich unsicher, ob der (vielleicht defekte) Solarempfänger genug Energie erzeugen kann, damit etwas funktioniert.
+Lassen wir es abwarten.
+Aktualisierung: Ich habe das neue Panel installiert und es scheint nun zu funktionieren.
+Es könnte trotzdem absterben, sobald die Sonne untergeht, aber wir werden weiter abwarten.
+Fakta: Ich verwende die Integration von Ping in Home Assistant, um zu überprüfen, ob es online ist oder nicht.
+Der Durchschnittswiederholungszeitraum beträgt 102 ms. Nicht schlecht, nicht grauenhaft.

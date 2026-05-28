@@ -1,0 +1,18 @@
+de.0	General Quality: 62	Cohesion: 55	Coherence: 60	Style Consistency: 58	Terminology Consistency: 70	Average: 61.00
+de.1	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+de.2	General Quality: 75	Cohesion: 70	Coherence: 80	Style Consistency: 65	Terminology Consistency: 60	Average: 70.00
+de.3	General Quality: 78	Cohesion: 70	Coherence: 75	Style Consistency: 68	Terminology Consistency: 65	Average: 71.20
+de.4	General Quality: 80	Cohesion: 75	Coherence: 82	Style Consistency: 68	Terminology Consistency: 70	Average: 75.00
+de.5	General Quality: 75	Cohesion: 70	Coherence: 80	Style Consistency: 65	Terminology Consistency: 60	Average: 70.00
+de.6	General Quality: 75	Cohesion: 70	Coherence: 80	Style Consistency: 65	Terminology Consistency: 70	Average: 72.00
+de.7	General Quality: 85	Cohesion: 88	Coherence: 90	Style Consistency: 80	Terminology Consistency: 92	Average: 87.00
+de.8	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 80	Average: 70.00
+de.9	General Quality: 92	Cohesion: 90	Coherence: 95	Style Consistency: 88	Terminology Consistency: 98	Average: 92.60
+de.10	General Quality: 87	Cohesion: 85	Coherence: 90	Style Consistency: 78	Terminology Consistency: 92	Average: 86.40
+de.11	General Quality: 68	Cohesion: 75	Coherence: 72	Style Consistency: 60	Terminology Consistency: 70	Average: 69.00
+de.12	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 80	Average: 70.00
+de.13	General Quality: 70	Cohesion: 80	Coherence: 75	Style Consistency: 85	Terminology Consistency: 65	Average: 75.00
+de.14	General Quality: 55	Cohesion: 60	Coherence: 65	Style Consistency: 50	Terminology Consistency: 40	Average: 54.00
+de.15	General Quality: 93	Cohesion: 95	Coherence: 96	Style Consistency: 90	Terminology Consistency: 97	Average: 94.20
+Average Scores	General Quality:	75.81	Cohesion:	74.25	Coherence:	79.38	Style Consistency:	69.38	Terminology Consistency:	73.38
+Meta	74.44

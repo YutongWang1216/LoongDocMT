@@ -1,0 +1,18 @@
+fr.0	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+fr.1	General Quality: 78	Cohesion: 80	Coherence: 82	Style Consistency: 75	Terminology Consistency: 85	Average: 80.00
+fr.2	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+fr.3	General Quality: 72	Cohesion: 65	Coherence: 78	Style Consistency: 68	Terminology Consistency: 60	Average: 68.60
+fr.4	General Quality: 75	Cohesion: 70	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 72.00
+fr.5	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 72	Terminology Consistency: 68	Average: 74.60
+fr.6	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 93	Average: 89.60
+fr.7	General Quality: 78	Cohesion: 80	Coherence: 85	Style Consistency: 70	Terminology Consistency: 85	Average: 79.60
+fr.8	General Quality: 82	Cohesion: 85	Coherence: 88	Style Consistency: 78	Terminology Consistency: 80	Average: 82.60
+fr.9	General Quality: 94	Cohesion: 92	Coherence: 95	Style Consistency: 93	Terminology Consistency: 98	Average: 94.40
+fr.10	General Quality: 82	Cohesion: 85	Coherence: 80	Style Consistency: 75	Terminology Consistency: 88	Average: 82.00
+fr.11	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 65	Average: 67.00
+fr.12	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+fr.13	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 80	Terminology Consistency: 85	Average: 75.00
+fr.14	General Quality: 82	Cohesion: 88	Coherence: 90	Style Consistency: 80	Terminology Consistency: 75	Average: 83.00
+fr.15	General Quality: 92	Cohesion: 95	Coherence: 94	Style Consistency: 90	Terminology Consistency: 97	Average: 93.60
+Average Scores	General Quality:	79.69	Cohesion:	78.75	Coherence:	83.38	Style Consistency:	75.38	Terminology Consistency:	77.44
+Meta	78.92

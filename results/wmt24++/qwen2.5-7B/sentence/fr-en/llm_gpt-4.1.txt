@@ -1,0 +1,18 @@
+en.0	General Quality: 60	Cohesion: 55	Coherence: 65	Style Consistency: 50	Terminology Consistency: 75	Average: 61.00
+en.1	General Quality: 60	Cohesion: 55	Coherence: 60	Style Consistency: 50	Terminology Consistency: 55	Average: 56.00
+en.2	General Quality: 70	Cohesion: 60	Coherence: 75	Style Consistency: 65	Terminology Consistency: 60	Average: 66.00
+en.3	General Quality: 45	Cohesion: 35	Coherence: 30	Style Consistency: 25	Terminology Consistency: 40	Average: 35.00
+en.4	General Quality: 75	Cohesion: 70	Coherence: 72	Style Consistency: 65	Terminology Consistency: 80	Average: 72.40
+en.5	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 72	Average: 67.00
+en.6	General Quality: 75	Cohesion: 70	Coherence: 80	Style Consistency: 65	Terminology Consistency: 85	Average: 75.00
+en.7	General Quality: 60	Cohesion: 55	Coherence: 50	Style Consistency: 45	Terminology Consistency: 70	Average: 56.00
+en.8	General Quality: 65	Cohesion: 60	Coherence: 65	Style Consistency: 55	Terminology Consistency: 50	Average: 59.00
+en.9	General Quality: 75	Cohesion: 70	Coherence: 72	Style Consistency: 68	Terminology Consistency: 80	Average: 73.00
+en.10	General Quality: 40	Cohesion: 30	Coherence: 25	Style Consistency: 20	Terminology Consistency: 60	Average: 35.00
+en.11	General Quality: 78	Cohesion: 80	Coherence: 85	Style Consistency: 65	Terminology Consistency: 75	Average: 76.60
+en.12	General Quality: 35	Cohesion: 30	Coherence: 25	Style Consistency: 20	Terminology Consistency: 40	Average: 30.00
+en.13	General Quality: 20	Cohesion: 10	Coherence: 10	Style Consistency: 5	Terminology Consistency: 30	Average: 15.00
+en.14	General Quality: 87	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 93	Average: 89.40
+en.15	General Quality: 40	Cohesion: 30	Coherence: 35	Style Consistency: 25	Terminology Consistency: 50	Average: 36.00
+Average Scores	General Quality:	59.56	Cohesion:	54.06	Coherence:	56.94	Style Consistency:	48.00	Terminology Consistency:	63.44
+Meta	56.40

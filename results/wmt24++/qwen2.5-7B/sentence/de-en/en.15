@@ -1,0 +1,26 @@
+Imagine a very long web page with many sections (for example, an HTML specification on one page). If the user requests a specific section (e.g., `page.html#section7`), what if the web server streamed that section first and then the rest of the pages afterward?
+The German phrase "Streamreihenfolge:" translates to "Stream order:" in English.
+The translation of the given German sentence to English is:  "From the start of the HTML document until <body>"
+The translation of the given German sentence to English is:  "2. HTML for Section 7"  This appears to be a title or label, likely in a list or document where "2." denotes it as the second item, "HTML for" suggests that the content is related to HTML (Hypertext Markup Language) and what follows is the section it applies to, which is "Section 7" in this case.
+3. HTML for Section 1, 2, 3 etc.
+Then the browser would ensure that sections 1 through 6 are displayed *over* section 7 on the webpage.
+Does that make sense? Would that be helpful?
+The linked section (#section7) should be rendered as quickly as possible without having to implement additional elements with JavaScript. I simply want to have an extra-long HTML document, but the linked sections should be rendered as quickly as possible. This should work with HTML.
+The content could be streamed this way, and then the browser would insert all <contents> into the <div>.   Note: The tags <contents> and <div> in the original sentence appear to be placeholders or examples of HTML tags. If these are meant to be specific elements, they should be replaced with the actual intended content or tags.
+The given text is an HTML code snippet and not a German sentence to translate. If you intended to provide a German sentence for translation, please provide it, and I'll be happy to help with the translation. The HTML snippet simply creates a div element with the id "sec1".
+The given text is an HTML code snippet and not a German sentence to translate. If you intended to provide a German sentence for translation, please provide it, and I'll be happy to help you translate it into English. The HTML code simply creates a div element with the id "sec2".
+The German abbreviation "usw." stands for "und so weiter" in English, which means "and so on" or "etc." in English. Therefore, the translation of "usw." is "etc." or "and so on."
+The provided text is an HTML code snippet and not a German sentence to translate. If you intended to translate a German sentence into English, please provide the German sentence, and I'll be happy to assist with that translation.
+It seems like you've provided some HTML-like content rather than a German sentence to translate. Could you please provide the actual German sentence you would like translated?
+It looks like you've provided an HTML-like structure with placeholders for content and section information. However, to accurately translate a German sentence into English, I need the actual German text that belongs in place of `<contents for=sec2>`. Could you please provide the German sentence or phrase you'd like translated?
+The abbreviation "usw." in German stands for "und so weiter" (and so on) in English. Therefore, the translation of "usw." is "etc." or "and so on."
+It would not be streamed in sequence, but the browser would assemble the HTML document as if it had been streamed in sequence.
+Here's the translation of the sentence from German to English:  "You can also re-order documents without using JS. If you want the server to do something, you should not use the hash part of the URL, but you can use query string parameters so that the server knows which section you want first. When re-ordering the parts, you have several options:"
+The translation of "CSS verwenden" from German to English is "use CSS."
+The translation of the German sentence "2. Vorlage mit Abschnitten verwenden" to English is:  "2. Use a template with sections"
+Sure, here is the translation of the given German sentence into English:  "@user23 Yes. The problem is that the visual order (what the user sees) does not match the DOM order. It would be useful to have an HTML function that allows content to be streamed out of order, but then the browser arranges it in DOM order."
+But the idea with the slots looks promising. I'll give that a try.
+@user22 Oh, do you want the browser to sort the DOM order?
+Sure, here is the translation of the provided German sentence into English:  "@user23 Yes, that's the idea. Section 7 would be streamed first just to make sure the user can see it as soon as possible. If that could be done without affecting the DOM order, that would be good, then the browser would ensure that the resulting DOM order matches the visual order."
+So, Section 7 should be streamed first, but the final result should appear as if all sections had been streamed in sequence.
+Here's the translation of the German sentence to English:  "@user22 @user23 Check out PHOOOS without JS: https://github.com/niutech/phooos"

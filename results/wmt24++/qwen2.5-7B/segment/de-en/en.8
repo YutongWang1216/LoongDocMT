@@ -1,0 +1,61 @@
+Maybe a fish-eye lens for a nesting box is a bit too much.
+You never learn, though.
+I should have known better since I built one with a "normal" lens before.
+I will write more about it over the weekend once I've installed the second one.
+Let's just say that the birds will have better internet access than I did in 2015.
+Zumindest ist das der Plan.
+The box, in which already a nest is, sucks a lot of WLAN data.
+For the other one, it's somewhat more difficult for him to go online.
+Okay, I've hung up the new nest box today. So he looks like this at his new place in the garden.
+But let's go back a bit. Nobody asks: "What exactly is inside?"
+At the top is one of these ESP32 camera boards with a fisheye lens and an IR LED that I took from a Raspberry Pi camera.
+The reason for the strange shape of this plastic box is the swiveling side wall of the nest box. I bought it in this form and could not change it, so I had to build around it.
+Since there is no power in the garden, the entire thing is powered by a solar panel and a 2600 mAh 18650 battery.
+I didn't photograph the battery or the charger, but here is a picture of the panel.
+In the gray box that hangs on the side of the nest box, the battery is located.
+If it is charged, I have a runtime of about 4 hours.
+That's what I call a feature. This way, the birds also get some privacy.
+At first, I wasn't sure if the internet in our garden would be sufficient for this setup. The old access points that I replaced last autumn in the fall would not have been enough.
+But the new ones cover this area very well.
+It's almost a shame because I had planned to install a TP-Link cpe210 on the roof and direct it downwards into the garden.
+Vielleicht mache ich das noch, wenn/falls ich weitere Nistkästen mit Kameras aufstelle. Gerade in Bereichen, die weiter vom Haus weg sind, brauche ich das wahrscheinlich.
+Nun ist die Kamera offline und ich weiß nicht, warum. Sie hat sich nur eine Stunde nach Sonnenuntergang ausgeschaltet.
+Möglicherweise hat die Batterie drei Stunden vor Sonnenuntergang nicht weitergeladen, weil nicht genug Licht da war.
+Oder etwa ein halber Tag war zu wenig, um die Batterie vollständig aufzuladen.
+Ich muss wohl abwarten, was morgen passiert.
+I have no telemetry for the battery. I might need to change that in the future.
+In general, a few more sensors would be a good thing, I think.
+And maybe a battery that at least theoretically is able to keep the device running overnight.
+Oh, and another objective.
+Fisheye is quite excessive.
+But I am already searching for parts at Digikey so that I can build my own board specifically for it.
+Or not. We will see.
+And he is still offline.
+Great.
+According to the actual solar cells on the house, we have only about 90 minutes of proper sunlight.
+Warten wir nochmal ein oder zwei Stunden ab, um zu sehen, was passiert – oder auch nicht.
+Immer noch offline.
+Es ist ja auch nie leicht.
+Es hat sich rausgestellt, dass bei dem USB-C-Breakout, das ich verwendet habe, um das Ladegerät anzuschließen, 5 V und GND auf dem Silkscreen vertauscht waren.
+Ich hab die Kabel getauscht und jetzt leuchtet die Ladeanzeige.
+The ESP did not go online right away. Let's wait a few minutes.
+An hour has passed and it is still offline.
+It seems like it is rebooting and triggering Tasmota's reset function.
+I think this panel is just no good. I have ordered a larger one now and hope that will work.
+Check out what I found in my workshop.
+A 24-V panel. Unfortunately, the sun is already quite low (and partially behind a tree), so the value practically drops to zero as soon as I put the device into operation.
+I'll have to wait until tomorrow to see if it's sufficient for this setup or if I need the better panel that I ordered.
+According to Amazon, I bought the panel in 2021 and it should deliver 12 V at a maximum of 1.2 A.
+So either something is wrong with the panel or my multimeter, or the data has been altered.
+Good news!
+They have changed the data, and the ones I have are wrong.
+The old as well as the new listing title calls it a 12 V 10-W panel.
+That's why I never delete old emails.
+Look! It went back online about an hour ago for about half a minute.
+Maybe the panel just charged the battery for 38 seconds of runtime in more than two hours.
+Ratet mal: Heute ist es bewölkt. Ich bin mir daher nicht sicher, ob das (wahrscheinlich kaputte) Solarpanel es schafft, überhaupt genug Strom zu erzeugen.
+Mal abwarten.
+Update: Ich habe das neue Panel installiert und jetzt scheint es zu funktionieren.
+Es könnte immer noch ausgehen, sobald die Sonne untergeht, aber geben wir ihm eine Chance.
+Funfact: Ich verwende die Ping-Integration in Home Assistant, um zu sehen, ob es online ist oder nicht.
+The average connection time is 102 ms. Not particularly good, but also not terribly bad.

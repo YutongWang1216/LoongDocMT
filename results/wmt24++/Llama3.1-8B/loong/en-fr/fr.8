@@ -1,0 +1,61 @@
+Peut-être que le objectif fish-eye est un peu excessif pour une boîte de nidification.
+On apprend et on vit.
+J'aurais probablement dû savoir mieux depuis que j'ai déjà construit une avec un "objectif normal".
+J'aurai plus de détails à partager sur ce sujet pendant le week-end, lorsque j'aurai installé la seconde que j'ai construite.
+Disons simplement que les oiseaux auront une connexion Internet meilleure que moi en 2015.
+Au moins, c'est ainsi que les choses sont prévues.
+Le boîtier qui a déjà un nid s'appuie sur le wifi de la maison.
+L'autre en aura besoin de plus de travail pour être connecté.
+D'accord, donc pendant la journée, j'ai suspendu le nouveau boîtier de nidification. Voici ce qu'il ressemble dans son endroit de rattachement au jardin.
+Mais revenons un peu en arrière. « Qu'est-ce qui se trouve vraiment à l'intérieur ? » personne ne demande.
+En haut se trouve l'un de ces cartes de caméra ESP32 équipées d'une caméra fish-eye et d'un LED IR que j'ai "volé" sur une caméra Raspberry Pi.
+La raison de la forme étrange de cette boîte en plastique est le panneau latéral pivotant de la boîte de nidification. J'ai acheté cela ainsi et n'ai pas pu le modifier, donc j'ai dû concevoir autour de cela.
+Puisqu'il n'y a pas d'électricité dans le jardin, tout cela est alimenté par un panneau solaire et une cellule 18650 de 2600mAh.
+J'ai négligé de photographier la cellule ou le chargeur, mais voici une photo du panneau.
+La boîte grise qui est suspendue du côté de la boîte de nidification est où vit la batterie.
+Lorsqu'il est chargé à pleine capacité, il me donne une durée de fonctionnement d'environ 4 heures.
+J'appelle cela une fonctionnalité. Ainsi, les oiseaux ont également un peu d'intimité.
+Au début, je ne suis pas sûr si l'internet dans notre jardin serait suffisamment bon pour ce système. Les anciens points d'accès que j'ai remplacés l'an dernier en automne ne l'auraient pas fait.
+Mais les nouveaux couvrent cette zone sans problème.
+C'est presque dommage car j'avais l'intention de monter un TP-Link cpe210 sur le toit et de le faire pointer vers le bas dans le jardin.
+J'ai encore l'intention de le faire lorsque je mettreai en place plus de boîtes de nid avec caméras. Surtout dans les zones plus éloignées de la maison, je pourrais en avoir besoin.
+Actuellement, pour des raisons que je ne comprends pas encore, la caméra est hors ligne. Elle s'est éteinte seulement une heure après le coucher du soleil.
+Peut-être qu'elle a cessé de charger la batterie il y a 3 heures avant le coucher du soleil en raison d'une insuffisance de lumière.
+Peut-être qu'elle n'a pas pu se recharger complètement en moins d'une demi-journée.
+Je suppose que je verrai ce qui se passe demain.
+Je n'ai aucune télémetrie pour la batterie. C'est quelque chose que je pourrais ajouter dans une révision future.
+Quelques sensors supplémentaires en général seraient sympas, je suppose.
+Et peut-être une batterie qui, au moins sur le papier, est capable de faire fonctionner l'appareil toute la nuit.
+Oh, et une lentille différente.
+Le fisheye est bien trop excessif.
+Mais je cherche déjà des composants sur Digikey, donc je peux peut-être fabriquer un PCB personnalisé pour ce cas d'utilisation précis.
+OU non. On verra.
+Et c'est toujours hors ligne.
+Super.
+Selon les panneaux solaires appropriés de la maison, le soleil n'est vraiment présent que pendant environ 90 minutes.
+Donnons-lui encore une heure ou deux pour voir ce qu'il fait (ou ne fait pas).
+Il est toujours hors ligne.
+Rien n'est jamais facile.
+Il s'avère que le décodeur USB-C que j'utilisais pour brancher le chargeur de batterie avait les signaux 5V et GND inversés sur l'écran silkscreen.
+J'ai inversé les connexions et maintenant j'ai une lumière de charge.
+L'ESP n'est pas allé en ligne immédiatement, donnons-lui quelques minutes.
+Une heure plus tard et c'est toujours hors ligne.
+Il semble qu'il se retrouve dans un boucle de redémarrage et déclenche ainsi la fonction de réinitialisation de Tasmotas.
+Je suppose que le panneau est vraiment mauvais. J'ai maintenant commandé un plus grand, en espérant que cela fera l'affaire.
+Regardez ce que j'ai trouvé dans mon atelier.
+C'est un panneau 24V. Malheureusement, le soleil est si bas (et en partie obstrué par un arbre) qu'il tombe à peu près à rien dès que je mets un chargeur dessus.
+Ainsi, je suppose que je devrai attendre demain pour savoir si cela suffit réellement pour ce setup ou si j'ai besoin du panneau mieux adapté que je viens de commander.
+Selon Amazon, j'ai acheté le panneau en 2021 et il devrait deliver 12V avec un maximum de 1,2A.
+Ainsi, soit il y a quelque chose de mal avec ce panneau, soit mon multimètre est défectueux, ou bien ils ont modifié la fiche technique.
+Bonnes nouvelles pour tout le monde !
+Ils ont modifié la liste et la mienne est déficiente.
+Les titres de la liste ancienne et nouvelle la désignent tous deux comme un panneau 12V de 10W.
+C'est pourquoi je ne supprime pas les emails anciens.
+Hé, regardez : la chose est revenue en ligne pendant environ une demi-minute il y a une heure.
+Peut-être le panneau a-t-il rechargé la batterie par filets juste assez pour une durée d'exécution de 38 secondes. Il a fallu un peu plus de deux heures pour y parvenir.
+Devine quoi : Il fait aujourd'hui de la pluie. Je ne suis donc pas sûr que ce panneau solaire (probablement cassé) soit capable de générer assez d'énergie pour réaliser quoi que ce soit.
+En attente et on verra.
+Mise à jour : J'ai installé le nouveau panneau et il semble maintenant fonctionner.
+Il pourrait toujours mourir dès que le soleil disparaît, mais en attendant, on verra.
+Curiosité : Je utilise l'intégration de ping dans Home Assistant pour surveiller si il est en ligne ou non.
+Le temps moyen du voyage aller-retour est de 102 ms. Pas terrible, pas horrible.

@@ -1,0 +1,61 @@
+Möglicherweise ist ein Fischaugenglaspunkt ein bisschen übertrieben für eine Nestbox.
+Man lebt und lernt.
+Ich hätte wahrscheinlich besser wissen sollen, seit ich bereits eine mit einem "normalen" Objektiv gebaut habe.
+Ich werde mehr darüber posten, wenn ich am Wochenende die zweite installieren kann, die ich gebaut habe.
+Lassen Sie es einfach dabei bewenden, die Vögel werden eine bessere Internetverbindung haben als ich im Jahr 2015.
+Oder, zumindest, das ist der Plan.
+Die Box, die bereits ein Nest in sich hat, leckt sich das Wlan des Hauses.
+Die andere benötigt noch etwas mehr Arbeit, um online zu sein.
+Ok, also habe ich während des Tages den neuen Nestkasten aufgehängt. Das ist, wie es in seinem Netzplatz im Garten aussieht.
+Aber lassen wir uns ein bisschen zurückversetzen. "Was steckt da eigentlich drin?" - niemand fragt das, denke ich.
+Oben ist eine dieser ESP32-Kamera-Platinen mit einer Fisheye-Linsenkamera und einer IR-LED, die ich von einer Raspberry Pi-Kamera geklaut habe.
+Der Grund für die seltsame Form jener Kunststoffbox ist die drehbare Seitenplatte des Bruthäuschens. Ich habe es so gekauft und konnte es nicht ändern, also musste ich mich drum herum drücken.
+Da es im Garten keine Stromversorgung gibt, wird die ganze Sache von einem Solarpanel und einem 2600mAh 18650-Zellenakkus betrieben.
+Ich habe die Zelle oder den Ladegerät nicht fotografiert, aber hier ist ein Bild des Panels.
+Die graue Box, die an der Seite des Bruthäuschens hängt, ist das Zuhause des Akkus.
+Bei einer vollen Aufladung liefert es mir etwa 4 Stunden Laufzeit.
+Ich nenne das ein Feature. So bekommen die Vögel auch ein bisschen Privatsphäre.
+Ich war ursprünglich unsicher, ob das Internet in unserem Garten ausreichen würde für diese Konfiguration. Die alten Zugriffspunkte, die ich im Herbst letzten Jahres ersetzt habe, hätten es nicht geschafft.
+Aber die neuen decken das Gebiet einfach gut ab.
+Das ist fast ein Jammer, weil ich geplant hatte, eine TP-Link cpe210 auf den Dach zu montieren und sie nach unten auf den Garten auszurichten.
+Ich werde es vielleicht trotzdem tun, wenn ich mehr Kamera-Einlegeboxen einrichte. Besonders in Bereichen, die weiter vom Haus entfernt sind, könnte ich es brauchen.
+Jetzt, für Gründe, die ich noch nicht ganz weiß, ist die Kamera offline. Sie ist erst eine Stunde nach Sonnenuntergang ausgeschieden.
+Möglicherweise hat sie 3 Stunden vor Sonnenuntergang aufgrund der mangelnden Beleuchtung das Batterielaufhalten gestoppt.
+Möglicherweise konnte sie nicht in knapp unter einem Tag vollständig aufladen.
+Ich denke, ich werde morgen sehen, was passiert.
+Ich habe keine Telemetriedaten für die Batterie. Das ist etwas, das ich in einer zukünftigen Revision hinzufügen könnte.
+Ein paar weitere Sensoren an sich wären schön, ich schätze.
+Und vielleicht eine Batterie, die auf dem Papier zumindest in der Lage ist, den Dingen über Nacht zu laufen.
+Oh, und ein anderes Objektiv.
+Fisheye ist übertrieben.
+Ich surfte aber schon im Digikey nach Teilen, also baut sich vielleicht selbst eine benutzerdefinierte PCB für diesen genauen Anwendungsbereich.
+Oder nicht. Wir werden sehen.
+Aaaund es ist immer noch offline.
+Super.
+Laut den richtigen Solarzellen auf dem Haus ist die Sonne nur wirklich für etwa 90 Minuten da.
+Lasst es uns noch einmal eine Stunde oder zwei dauern, um zu sehen, was es (nicht) tut.
+Still offline.
+Alles wird nie einfach.
+Es stellt sich heraus, dass die USB-C-Breakout-Leiste, über die ich mich in die Batterieladestation einstecken wollte, an der Silberschicht 5V und GND vertauscht hatte.
+Habe die Anschlüsse umgeschaltet und jetzt habe ich ein Aufladesignal.
+Das ESP geht nicht sofort online, lass uns ihm ein paar Minuten Zeit geben.
+Ein Stunde später und es ist immer noch offline.
+Es sieht so aus, als ob es in einem Wiederstart-Schleifen läuft und die Tasmotas-Reset-Funktion auslöst.
+Ich vermute, dass das Panel einfach nur Scheiße ist. Ich habe jetzt ein größeres Panel bestellt, in der Hoffnung, dass dies das Problem löst.
+Schau, was ich in meinem Werkstatt gefunden habe.
+Es ist ein 24V-Panel. Leider ist die Sonne so tief (und teilweise von einem Baum behindert) , dass es abnimmt und fast nichts ergibt, sobald ich eine Last darauf lege.
+Also werde ich wahrscheinlich bis morgen warten müssen, um herauszufinden, ob es eigentlich ausreicht für diese Anlage oder ob ich das bessere Panel, das ich bestellt habe, brauche.
+Laut Amazon habe ich das Panel 2021 gekauft und es sollte bei einer Maximalleistung von 1,2A 12V ausgeben.
+Entweder ist also etwas mit diesem Panel falsch oder mein Multimeter oder sie haben die Liste geändert.
+Alles Gute, Leute!
+Sie haben die Liste geändert und die, die ich habe, funktioniert nicht.
+Beide der alte und die neue Titel der Liste nennen es eine 12V 10W-Panel.
+Dies ist der Grund, warum ich alte E-Mails nicht lösche.
+Hey, schau mal: Die Sache ging vor etwa einer Stunde für ungefähr eine halbe Minute wieder online.
+Möglicherweise hat das Solarpanel das Akku nur gerade genug aufgeladen, um es für 38 Sekunden laufen zu lassen. Es hat dafür ungefähr zwei Stunden 17 Minuten gedauert.
+Es ist ein Wetter: Heute ist es bewölkt. Also bin ich mir nicht sicher, ob jenes (vermutlich kaputte) Sonnenpanel genug Energie generieren kann, um etwas zu erreichen.
+Lass uns abwarten.
+Update: Ich habe das neue Panel installiert und es scheint nun zu funktionieren.
+Es kann es immer noch sterben, sobald die Sonne untergeht, aber lass uns abwarten.
+Funfact: Ich verwende die Ping-Integration in Home Assistant, um zu überprüfen, ob es online ist oder nicht.
+Der durchschnittliche Hin- und Rückweg dauert 102 ms. Nicht groß, nicht schlecht.

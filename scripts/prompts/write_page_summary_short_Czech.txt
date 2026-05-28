@@ -1,0 +1,4 @@
+Shrňte prosím daný odstavec a zachovejte přitom co nejvíce klíčových informací. Upozorňujeme, že délka shrnutí by neměla přesáhnout 50 slov.
+
+<Odstavec>
+{text}

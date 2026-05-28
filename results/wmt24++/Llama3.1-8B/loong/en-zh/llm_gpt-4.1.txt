@@ -1,0 +1,18 @@
+zh.0	General Quality: 65	Cohesion: 60	Coherence: 68	Style Consistency: 55	Terminology Consistency: 60	Average: 61.60
+zh.1	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+zh.2	General Quality: 45	Cohesion: 40	Coherence: 50	Style Consistency: 35	Terminology Consistency: 30	Average: 40.00
+zh.3	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+zh.4	General Quality: 45	Cohesion: 40	Coherence: 35	Style Consistency: 30	Terminology Consistency: 25	Average: 35.00
+zh.5	General Quality: 65	Cohesion: 60	Coherence: 65	Style Consistency: 55	Terminology Consistency: 60	Average: 61.00
+zh.6	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+zh.7	General Quality: 68	Cohesion: 70	Coherence: 72	Style Consistency: 60	Terminology Consistency: 65	Average: 67.00
+zh.8	General Quality: 78	Cohesion: 80	Coherence: 82	Style Consistency: 75	Terminology Consistency: 85	Average: 80.00
+zh.9	General Quality: 83	Cohesion: 85	Coherence: 87	Style Consistency: 80	Terminology Consistency: 78	Average: 82.60
+zh.10	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 85	Average: 77.60
+zh.11	General Quality: 65	Cohesion: 70	Coherence: 68	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+zh.12	General Quality: 65	Cohesion: 60	Coherence: 62	Style Consistency: 55	Terminology Consistency: 50	Average: 58.40
+zh.13	General Quality: 55	Cohesion: 60	Coherence: 50	Style Consistency: 45	Terminology Consistency: 60	Average: 54.00
+zh.14	General Quality: 78	Cohesion: 80	Coherence: 82	Style Consistency: 75	Terminology Consistency: 70	Average: 77.00
+zh.15	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 80	Average: 87.00
+Average Scores	General Quality:	66.00	Cohesion:	64.69	Coherence:	67.69	Style Consistency:	58.12	Terminology Consistency:	58.62
+Meta	63.02

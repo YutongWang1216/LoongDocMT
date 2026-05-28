@@ -1,0 +1,18 @@
+zh.0	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+zh.1	General Quality: 60	Cohesion: 55	Coherence: 65	Style Consistency: 50	Terminology Consistency: 45	Average: 55.00
+zh.2	General Quality: 65	Cohesion: 60	Coherence: 65	Style Consistency: 55	Terminology Consistency: 50	Average: 59.00
+zh.3	General Quality: 65	Cohesion: 60	Coherence: 68	Style Consistency: 55	Terminology Consistency: 50	Average: 59.60
+zh.4	General Quality: 55	Cohesion: 50	Coherence: 50	Style Consistency: 45	Terminology Consistency: 40	Average: 48.00
+zh.5	General Quality: 60	Cohesion: 55	Coherence: 60	Style Consistency: 50	Terminology Consistency: 40	Average: 53.00
+zh.6	General Quality: 68	Cohesion: 65	Coherence: 62	Style Consistency: 60	Terminology Consistency: 55	Average: 62.00
+zh.7	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 75	Average: 67.60
+zh.8	General Quality: 75	Cohesion: 70	Coherence: 72	Style Consistency: 68	Terminology Consistency: 65	Average: 70.00
+zh.9	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 72	Terminology Consistency: 85	Average: 78.00
+zh.10	General Quality: 80	Cohesion: 85	Coherence: 82	Style Consistency: 78	Terminology Consistency: 88	Average: 82.60
+zh.11	General Quality: 70	Cohesion: 65	Coherence: 68	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+zh.12	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+zh.13	General Quality: 55	Cohesion: 60	Coherence: 50	Style Consistency: 55	Terminology Consistency: 45	Average: 53.00
+zh.14	General Quality: 68	Cohesion: 70	Coherence: 72	Style Consistency: 65	Terminology Consistency: 60	Average: 67.00
+zh.15	General Quality: 75	Cohesion: 70	Coherence: 72	Style Consistency: 78	Terminology Consistency: 65	Average: 72.00
+Average Scores	General Quality:	67.38	Cohesion:	64.69	Coherence:	67.25	Style Consistency:	60.69	Terminology Consistency:	58.00
+Meta	63.60

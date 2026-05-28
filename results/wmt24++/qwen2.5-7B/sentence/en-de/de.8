@@ -1,0 +1,61 @@
+Vielleicht ist ein Fischaugenglaser etwas Übertreibung für eine Nestbox.
+Die Sprüche sindweis. Literally translating your phrase "You live and learn" to German, we could say "Man lernt im Leben," which captures the essence of the saying. Another close translation would be "Man lebt und lernt." Both convey the idea that experiences in life teach us things.
+Ich hätte wahrscheinlich besser gewusst, da ich schon einen mit einer „normalen“ Linse gebaut habe.
+Ich werde während des Wochenendes mehr darüber posten, wenn ich den zweiten, den ich gebaut habe, installiere.
+Lass uns sagen, dass die Vögel im Jahr 2015 eine bessere Internetverbindung haben werden als ich.
+Oder zumindest ist das der Plan.
+Der Kasten, der bereits einen Nestel hat, lebt sich vom WLAN im Haus ab.
+Der andere wird noch ein bisschen Arbeit brauchen, bis er online ist.
+Okay, also während des Tages habe ich die neue Nestbox hängen lassen. Und hier ist das, wie sie an ihrem netten Platz im Garten aussieht.
+Aber lass uns einen Schritt zurückgehen. "Was ist eigentlich drin?" höre ich niemanden fragen.
+Im oberen Teil befindet sich eines dieser ESP32-Kamera-Boards mit einem Fischaugenglas-Kamera und einer IR-LED, die ich mir von einer Raspberry Pi-Kamera bemachtigt habe.
+Der Grund für die seltsame Form dieser Kunststoffbox ist der sich drehende Seitenflügel des Nesteresels. Ich habe sie so gekauft und konnte sie nicht ändern, sodass ich umgehen musste.
+Da es im Garten kein elektrisches Stromnetz gibt, wird alles durch eine Solarenergiezelle und eine 2600mAh 18650-Batterie versorgt.
+Ich habe keine Fotos vom Zellblock oder der Ladestation gemacht, hier ist aber ein Bild des Moduls.
+Der graue Behälter, der an der Seite des Nestbehausungsbehälters hängt, beherbergt die Batterie.
+Bei einer vollkommenen Ladung bietet es mir eine Laufzeit von etwa 4 Stunden.
+Ich bezeichne das als eine Funktionalität. So haben die Vögel auch ein bisschen Privatsphäre.
+Zunächst war ich nicht sicher, ob das Internet in unserem Garten ausreichend gut für diese Anordnung sein würde. Die alten Zugangspunkte, die ich letztes Herbst ausgetauscht habe, wären es nicht geschafft haben.
+Aber die neuen bedecken jenen Bereich vollkommen.
+Das ist fast ein Pech, weil ich geplant hatte, das TP-Link CPE210 auf dem Dach anzumuten und es nach unten ins Gartenbecken zu richten.
+Ich könnte das noch tun, wenn ich mehr Kamera-nesternester einrichte. Insbesondere in Bereichen, die weiter vom Haus entfernt sind, könnte ich es benötigen.
+Jetzt ist der Kamera ausnahmsweise ausgeschaltet, woran ich noch nicht sicher bin, aber es geschah nur eine Stunde nach dem Sonnenuntergang.
+Vielleicht hat es sich 3 Stunden vor Sonnenuntergang vom Akkustand abgewendet, da die Lichtverhältnisse zu schlecht waren.
+Vielleicht konnte es nicht vollständig aufladen, etwas weniger als halb einem Tag lang.
+Ich glaube, ich werde sehen, was morgen passiert.
+Ich habe keine Telemetriedaten für die Batterie. Das könnte ich in einer zukünftigen Revision hinzufügen.
+Ein paar mehr Sensoren im Allgemeinen wären gut, denke ich.
+Und vielleicht eine Batterie, die theoretisch die entire Nacht durchbetrieben werden kann.
+Oh, und eine andere Linse.
+Die Fischaussicht ist komplett überteuert.
+Aber ich surfte bereits durch Digikey nach Bauteilen, daher könnte ich mir vielleicht einfach eine benutzerdefinierte PCB für diesen genauen Fall der Verwendung bauen.
+Oder nicht. Wir werden es sehen.
+Und es ist immer noch nicht-online.
+Gut.
+Gemäß den richtigen Solarzellen auf dem Haus ist die Sonne nur etwa 90 Minuten wirklich aktiv.
+Lassen wir es noch eine Stunde oder zwei haben, um zu sehen, was es (nicht) tut.
+Immer noch offline.
+Das ist nie leicht.
+Es stellt sich heraus, dass der USB-C Breakout, den ich zum Anschluss am Batteriecharger verwendet habe, die 5V- und GND-Signale im Silkscreen vertauscht hatte.
+Hier ist die Übersetzung ins Deutsche:  "Die Leitungen getauscht und jetzt habe ich eine Ladungslampe."   oder  "Die Anschlüsse gewechselt und jetzt hab ich eine Akkuschaltung."   Beide Sätze vermitteln den gleichen Sinn, wobei der zweite Vorschlag "Akkuschaltung" als alternativen Begriff für "charging light" verwendet, was in diesem Kontext auch passend ist.
+Der ESP ging nicht sofort online, lassen wir es ein paar Minuten ausruhen.
+Eine Stunde später ist es immer noch nicht online.
+Es sieht so aus, als würde es einen Reboot-Loop verursachen und die Reset-Funktion von Tasmota auslösen.
+Ich schätze, der Panelstick ist echt scheiße. Ich habe jetzt einen größeren bestellt und hoffe, dass sich das dadurch ändert.
+Schau, was ich in meinem Werkstatt gefunden habe.
+Es ist ein 24V-Steckdienstegel. Leider ist die Sonne so tief (und teilweise von einem Baum verdeckt), dass sie sobald ich einen Lastbetrieb starte, praktisch komplett versickert.
+Also müsste ich wohl bis morgen warten, um herauszufinden, ob es tatsächlich ausreichend für diese Einrichtung ist, oder ob ich den besseren Panel, den ich bestellt habe, benötige.
+Gemäß Amazon habe ich den Panel im Jahr 2021 gekauft, und es sollte ein Maximum von 12V bei maximal 1,2A ausgeben.
+So entweder ist etwas mit diesem Steuerungsfeld nicht in Ordnung oder mein Multimeter defekt, oder sie haben die Liste geändert.
+Die gute Nachricht für alle!
+Die Liste wurde geändert, und die ich habe, funktioniert nicht mehr.
+Beide die alte und die neue Auflistungstitel bezeichnen es als ein 12V 10W-Panel.
+Dies ist der Grund, warum ich alte Emails nicht lösche.
+Hey, schau mal: Der Sachverhalt war etwa eine Stunde her wieder online für ca. 30 Sekunden.
+Vielleicht ladete der Panelanschluss die Batterie langsam so lange auf, dass sie 38 Sekunden Betriebsdauer hat. Das dauerte nur etwas über zwei Stunden.
+Mal waserraschend: Es ist heute wolkenverhangen. Daher bin ich unsicher, ob der (vermutlich defekte) Solarempfänger genug Elektrizität erzeugen kann, um etwas zu leisten.
+Warten wir und sehen, wie es sich entwickelt.
+Update: Ich habe den neuen Panel installiert und es scheint nun zu funktionieren.
+Es könnte immer noch sterben, sobald die Sonne untergeht, aber wir müssen und werden sehen.
+Faktoid: Ich verwende die Ping-Integration in Home Assistant, um zu überprüfen, ob das Gerät online ist oder nicht.
+Der durchschnittliche Round-Trip-Time beträgt 102 ms. Nicht großartig, nicht schlimm.

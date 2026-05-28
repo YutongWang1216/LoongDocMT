@@ -1,0 +1,18 @@
+en.0	General Quality: 78	Cohesion: 80	Coherence: 85	Style Consistency: 75	Terminology Consistency: 90	Average: 81.60
+en.1	General Quality: 78	Cohesion: 85	Coherence: 88	Style Consistency: 75	Terminology Consistency: 80	Average: 81.20
+en.2	General Quality: 78	Cohesion: 75	Coherence: 82	Style Consistency: 70	Terminology Consistency: 65	Average: 74.00
+en.3	General Quality: 70	Cohesion: 60	Coherence: 75	Style Consistency: 65	Terminology Consistency: 55	Average: 65.00
+en.4	General Quality: 82	Cohesion: 85	Coherence: 88	Style Consistency: 78	Terminology Consistency: 80	Average: 82.60
+en.5	General Quality: 85	Cohesion: 90	Coherence: 92	Style Consistency: 83	Terminology Consistency: 88	Average: 87.60
+en.6	General Quality: 88	Cohesion: 92	Coherence: 90	Style Consistency: 85	Terminology Consistency: 93	Average: 89.60
+en.7	General Quality: 85	Cohesion: 92	Coherence: 90	Style Consistency: 80	Terminology Consistency: 95	Average: 88.40
+en.8	General Quality: 85	Cohesion: 88	Coherence: 90	Style Consistency: 80	Terminology Consistency: 95	Average: 87.60
+en.9	General Quality: 87	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 98	Average: 90.40
+en.10	General Quality: 92	Cohesion: 95	Coherence: 97	Style Consistency: 93	Terminology Consistency: 98	Average: 95.00
+en.11	General Quality: 85	Cohesion: 90	Coherence: 92	Style Consistency: 80	Terminology Consistency: 88	Average: 87.00
+en.12	General Quality: 78	Cohesion: 85	Coherence: 82	Style Consistency: 75	Terminology Consistency: 80	Average: 80.00
+en.13	General Quality: 70	Cohesion: 85	Coherence: 80	Style Consistency: 75	Terminology Consistency: 70	Average: 76.00
+en.14	General Quality: 87	Cohesion: 92	Coherence: 95	Style Consistency: 85	Terminology Consistency: 93	Average: 90.40
+en.15	General Quality: 95	Cohesion: 97	Coherence: 98	Style Consistency: 96	Terminology Consistency: 92	Average: 95.60
+Average Scores	General Quality:	82.69	Cohesion:	86.31	Coherence:	88.50	Style Consistency:	80.00	Terminology Consistency:	85.00
+Meta	84.50

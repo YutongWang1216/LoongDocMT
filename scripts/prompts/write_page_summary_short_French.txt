@@ -1,0 +1,4 @@
+Veuillez résumer le paragraphe en question, en conservant autant que possible les informations essentielles. Veuillez noter que la longueur du résumé ne doit pas dépasser 50 mots.
+
+<Paragraphe>
+{text}

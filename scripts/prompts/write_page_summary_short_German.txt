@@ -1,0 +1,4 @@
+Bitte fassen Sie den jeweiligen Absatz zusammen und bewahren Sie dabei möglichst die wichtigsten Informationen auf. Die Zusammenfassung sollte maximal 50 Wörter umfassen.
+
+<Absatz>
+{text}

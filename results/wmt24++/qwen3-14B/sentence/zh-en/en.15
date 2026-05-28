@@ -1,0 +1,26 @@
+Imagine a very long web page with many sections (such as a single-page HTML specification). If a user requests a specific part of it (for example, page.html#section7), can the web server first send only that part and then send the rest later?
+Flow sequence:
+1. The beginning of the HTML document, up to the <body> tag
+2. HTML code for Section 7
+3. HTML code for parts 1, 2, 3, etc.
+The browser must ensure that sections 1 through 6 are inserted above section 7 on the webpage.
+Is this reasonable? Will it be helpful?
+The goal I want to achieve is to have the linked section (#section7) rendered as quickly as possible without having to reimplement it using JavaScript or similar technologies. I want a very long HTML document, but with the linked section still rendered quickly. This can be achieved using just HTML.
+The content can be streamed like this, and then the browser will insert each <content> element into the corresponding <div> element.
+<div id="sec1"></div>
+<div id=sec2></div>
+Wait a minute.
+<div id=sec7>Section 7…</div>
+<contents for=sec1>Section 1…</contents>
+<contents for=sec2>Section 2…</contents>
+etc.
+Although the streaming order is out of sequence, the browser assembles the HTML document in the correct order.
+@user22 Actually, you can also sort the document content without using JavaScript. However, if you want the server to do something, you can't use the URL hash part anymore. Instead, you need to use query string parameters to let the server know which section you want to view first. As for reordering the page content, you have the following options:
+1. Use CSS
+2. Use a template with slots
+@user23 You're right. The issue is that the visual order (what the user sees) doesn't match the DOM order. If HTML could support out-of-order streaming while browsers arrange the content in order within the DOM, it might be very useful.
+However, the slot method seems quite promising. I'll give it a try.
+@user22 Oh, are you trying to let the browser automatically correct the DOM order?
+@user23 That's exactly how I thought. The only reason for transmitting part 7 first is to let users see it as soon as possible. It would be great if this could be achieved without affecting the DOM order, so that the browser can ensure the final DOM order matches the visual order.
+In other words, transmit the 7th part first, but the final result (DOM and visual effects) should be exactly the same as if all parts were transmitted in order.
+@user22 @user33 You can check out PHOOOS which doesn't use JS: https://github.com/niutech/phooos

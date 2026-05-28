@@ -1,0 +1,26 @@
+Imaginons une page web très longue divisée en plusieurs sections (par exemple, une spécification HTML à une seule page). Si l'utilisateur demande une section spécifique (par exemple, page.html#section7), et si le serveur web streamait d'abord cette section et les autres après ?
+Ordre de streaming :
+1. début du document HTML jusqu'à </body>
+2. HTML pour la section 7
+3. HTML pour les sections 1, 2, 3, etc.
+Le navigateur insérerait alors les sections 1 à 6 au-dessus de la section 7 sur la page web.
+Cela fait-il sens ? Cela serait-il utile ?
+Le but que je voudrais atteindre est d'avoir la section liée (#section7) qui affiche aussi rapidement que possible sans avoir à reimplementer des choses avec du JavaScript. Je veux simplement avoir un document HTML très long mais encore avoir les sections liées qui affichent aussi rapidement que possible. Cela devrait juste fonctionner avec HTML.
+Le contenu pourrait être diffusé comme ceci, et puis le navigateur injecterait chaque <contents> dans son <div>.
+<div id=sec1></div>
+<div id=sec2></div>
+etc.
+<div id=sec7>section 7…</div>
+<contents for=sec1>section 1…</contents>
+<contents for=sec2>section 2…</contents>
+etc.
+Il serait diffusé en désordre, mais le navigateur assemblerait le document HTML comme s'il était diffusé dans l'ordre.
+@user22 Vous pouvez réorganiser les documents de cette manière sans JavaScript non plus. Vous ne pouvez pas utiliser la partie hash de l'URL si vous voulez que le serveur fasse quelque chose, mais vous pouvez utiliser des paramètres de recherche de chaîne pour URL pour faire savoir au serveur quelles sections vous souhaitez d'abord. Vous avez un choix pour réorganiser les parties :
+1. Utilisez le CSS
+2. Utilisez un modèle avec des slots
+@user23 Oui. Le problème est que l'ordre visuel (ce que le utilisateur voit) ne correspond pas à l'ordre du DOM. Il pourrait être utile qu'il existe une fonctionnalité HTML qui permettrait de diffuser dans un ordre différent, mais alors le navigateur organiserait alors le contenu dans l'ordre du DOM.
+Mais l'approche des slots semble prometteuse. Je vais essayer.
+@user22 Oh, tu veux que le navigateur répare l'ordre du DOM ?
+@user23 Oui, c'est l'idée. La section 7 serait diffusée en premier car l'utilisateur pourra la voir aussi tôt que possible. Si cela peut être fait sans affecter l'ordre du DOM, ce serait parfait, donc le navigateur s'assurerait que l'ordre final du DOM corresponde à l'ordre visuel.
+D'autre part, diffuser d'abord la section 7, mais faire en sorte que le résultat final (DOM et visuel) soit comme si toutes les sections avaient été diffusées dans un ordre.
+@user22 @user23 Vérifiez PHOOOS sans JS: https://github.com/niutech/phooos

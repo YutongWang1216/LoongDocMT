@@ -1,0 +1,18 @@
+en.0	General Quality: 72	Cohesion: 75	Coherence: 78	Style Consistency: 68	Terminology Consistency: 60	Average: 70.60
+en.1	General Quality: 75	Cohesion: 70	Coherence: 80	Style Consistency: 65	Terminology Consistency: 60	Average: 70.00
+en.2	General Quality: 72	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 64.40
+en.3	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 55	Average: 65.00
+en.4	General Quality: 65	Cohesion: 70	Coherence: 68	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+en.5	General Quality: 75	Cohesion: 80	Coherence: 78	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+en.6	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 82	Terminology Consistency: 85	Average: 87.40
+en.7	General Quality: 78	Cohesion: 85	Coherence: 82	Style Consistency: 75	Terminology Consistency: 90	Average: 82.00
+en.8	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 97	Average: 90.40
+en.9	General Quality: 90	Cohesion: 92	Coherence: 95	Style Consistency: 88	Terminology Consistency: 93	Average: 91.60
+en.10	General Quality: 90	Cohesion: 92	Coherence: 93	Style Consistency: 88	Terminology Consistency: 95	Average: 91.60
+en.11	General Quality: 85	Cohesion: 90	Coherence: 88	Style Consistency: 80	Terminology Consistency: 92	Average: 87.00
+en.12	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 95	Average: 90.00
+en.13	General Quality: 70	Cohesion: 85	Coherence: 80	Style Consistency: 60	Terminology Consistency: 90	Average: 77.00
+en.14	General Quality: 82	Cohesion: 85	Coherence: 88	Style Consistency: 75	Terminology Consistency: 70	Average: 80.00
+en.15	General Quality: 92	Cohesion: 95	Coherence: 93	Style Consistency: 90	Terminology Consistency: 94	Average: 92.80
+Average Scores	General Quality:	80.00	Cohesion:	82.44	Coherence:	84.00	Style Consistency:	74.44	Terminology Consistency:	78.19
+Meta	79.81

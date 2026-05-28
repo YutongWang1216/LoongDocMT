@@ -1,0 +1,4 @@
+Please provide a summary of the given paragraph, preserving key information as much as possible.
+
+<Paragraph>
+{text}

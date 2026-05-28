@@ -1,0 +1,4 @@
+Please provide a summary of the given paragraph, preserving key information as much as possible. Note that the length of the summary should not exceed 50 words.
+
+<Paragraph>
+{text}

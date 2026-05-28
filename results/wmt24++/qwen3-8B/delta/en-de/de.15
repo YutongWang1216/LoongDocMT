@@ -1,0 +1,26 @@
+Stellen Sie sich eine sehr lange Webseite mit vielen Abschnitten (z. B. eine einseitige HTML-Spezifikation) vor. Wenn ein Benutzer einen bestimmten Abschnitt (z. B. page.html#section7) anfordert, was wäre, wenn der Webserver diesen Abschnitt zuerst streamen und die anderen Abschnitte danach senden würde?
+Stream-Reihenfolge:
+1. Beginn des HTML-Dokuments bis <body>
+2. HTML für Abschnitt 7
+3. HTML für Abschnitt 1, 2, 3, etc.
+Der Browser würde dann sicherstellen, dass die Abschnitte 1 bis 6 *oben* von Abschnitt 7 auf der Webseite eingefügt werden.
+Hat das einen Sinn? Wäre das nützlich?
+Was ich erreichen möchte, ist, dass der verknüpfte Abschnitt (#section7) so schnell wie möglich gerendert wird, ohne dass man Dinge mit JavaScript neu implementieren muss. Ich möchte einfach einen sehr langen HTML-Dokument mit verknüpften Abschnitten haben, die so schnell wie möglich gerendert werden. Es sollte einfach mit HTML funktionieren.
+Der Inhalt könnte so gestreamt werden, und dann würde der Browser jeden <contents> in sein <div> injizieren.
+<div id=sec1></div>
+<div id=sec2></div>
+etc.
+<div id=sec7>Abschnitt 7…</div>
+<contents for=sec1>Abschnitt 1…</contents>
+<contents for=sec2>Abschnitt 2…</contents>
+etc.
+Es würde außerhalb der Reihenfolge gestreamt, aber der Browser würde das HTML-Dokument so zusammensetzen, als wäre es in der richtigen Reihenfolge gestreamt.
+@user22 Du kannst Dokumente so umsortieren, sogar ohne JavaScript. Du kannst den Hash-Teil der URL nicht verwenden, wenn du das Server-Verhalten beeinflussen möchtest, aber du kannst Suchparameter in der Abfragezeichenkette verwenden, um dem Server mitzuteilen, welchen Abschnitt du zuerst haben möchtest. Du hast eine Wahl bei der Umordnung der Teile:
+1. Verwende CSS
+2. Verwende ein Template mit Slots
+@user23 Ja. Das Problem ist, dass die visuelle Reihenfolge (was der Benutzer sieht) nicht mit der DOM-Reihenfolge übereinstimmt. Es wäre nützlich, wenn es eine HTML-Funktion gäbe, die es ermöglichen würde, den Inhalt außerhalb der Reihenfolge zu streamen, aber der Browser würde dann den Inhalt in der DOM-Reihenfolge anordnen.
+Aber der Ansatz mit Slots sieht vielversprechend aus. Ich werde es ausprobieren.
+@user22 oh, willst du, dass der Browser die DOM-Reihenfolge korrigiert?
+@user23 Ja, das ist die Idee. Abschnitt 7 würde zuerst gestreamt, nur damit der Benutzer ihn so schnell wie möglich betrachten kann. Wenn dies ohne Beeinträchtigung der DOM-Reihenfolge möglich wäre, wäre das gut, damit der Browser sicherstellen würde, dass die resultierende DOM-Reihenfolge mit der visuellen Reihenfolge übereinstimmt.
+Im anderen Wort, streamen Sie Abschnitt 7 zuerst, aber sorgen Sie dafür, dass das Endresultat (DOM und visuell) so aussieht, als ob alle Abschnitte in der richtigen Reihenfolge gestreamt wurden.
+@user22 @user23 Schaut euch PHOOOS ohne JS an: https://github.com/niutech/phooos

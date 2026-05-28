@@ -1,0 +1,4 @@
+Por favor, proporcione un resumen del párrafo dado, conservando la información clave tanto como sea posible. Tenga en cuenta que la longitud del resumen no debe exceder las 50 palabras.
+
+<Párrafo>
+{text}

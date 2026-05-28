@@ -1,0 +1,26 @@
+Imaginez une page web très longue avec beaucoup de sections (par exemple, une spécification HTML à page unique). Si l'utilisateur demande une section spécifique (par exemple, page.html#section7), que se passerait-il si le serveur web envoyait d'abord cette section, puis les autres sections après celle-ci ?
+Ordre de streaming :
+1. début du document HTML jusqu'à <body>
+2. HTML pour la section 7
+3. HTML pour les sections 1, 2, 3, etc.
+Le navigateur ferait alors en sorte d'insérer les sections 1 à 6 *au-dessus* de la section 7 sur la page web.
+Cela a-t-il du sens ? Est-ce utile ?
+Je veux simplement obtenir que la section liée (#section7) s'affiche aussi rapidement que possible sans avoir à reimplémenter des choses avec JavaScript. Je veux simplement avoir un document HTML très long, mais que les sections liées s'affichent aussi rapidement que possible. Cela devrait fonctionner normalement avec HTML.
+Le contenu pourrait être transmis ainsi, et ensuite le navigateur insérerait chaque <contents> dans son <div>.
+<div id=sec1></div>
+<div id=sec2></div>
+etc.
+<div id=sec7>section 7…</div>
+<contents for=sec1>section 1…</contents>
+<contents for=sec2>section 2…</contents>
+etc.
+Il serait diffusé dans un ordre différent, mais le navigateur assemblerait le document HTML comme s'il était diffusé dans l'ordre correct.
+@user22 Vous pouvez réordonner les documents ainsi sans JavaScript non plus. Vous ne pouvez pas utiliser la partie hash de l'URL si vous souhaitez que le serveur fasse quelque chose, mais vous pouvez utiliser les paramètres de recherche de la chaîne de requête pour indiquer au serveur quelle section vous souhaitez afficher en premier. Vous avez le choix pour réordonner les parties :
+1. Utiliser le CSS
+2. Utiliser un modèle avec des slots
+@user23 Oui. Le problème est que l'ordre visuel (ce que l'utilisateur voit) ne correspond pas à l'ordre du DOM. Il serait utile s'il existait une fonctionnalité HTML permettant de stream dans un ordre différent, mais le navigateur réorganiserait alors le contenu du DOM dans l'ordre correct.
+Mais l'approche des slots semble prometteuse. Je vais essayer.
+@user22 Oh, vous voulez que le navigateur corrige l'ordre du DOM ?
+@user23 Oui, c'est l'idée. La section 7 serait streamée en premier uniquement pour que l'utilisateur puisse la voir dès maintenant. Si cela est possible sans affecter l'ordre du DOM, ce serait idéal, afin que le navigateur s'assure que l'ordre final du DOM corresponde à l'ordre visuel.
+Autrement dit, streamez d'abord la section 7, mais faites en sorte que le résultat final (DOM et visuel) soit comme si toutes les sections avaient été streamées dans l'ordre.
+@user22 @user23 Regardez PHOOOS sans JS : https://github.com/niutech/phooos

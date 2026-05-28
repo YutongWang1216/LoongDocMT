@@ -1,0 +1,18 @@
+zh.0	General Quality: 88	Cohesion: 90	Coherence: 87	Style Consistency: 85	Terminology Consistency: 80	Average: 86.00
+zh.1	General Quality: 92	Cohesion: 95	Coherence: 94	Style Consistency: 90	Terminology Consistency: 97	Average: 93.60
+zh.2	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 80	Average: 87.00
+zh.3	General Quality: 90	Cohesion: 88	Coherence: 92	Style Consistency: 87	Terminology Consistency: 95	Average: 90.40
+zh.4	General Quality: 78	Cohesion: 80	Coherence: 82	Style Consistency: 75	Terminology Consistency: 65	Average: 76.00
+zh.5	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 83	Average: 87.60
+zh.6	General Quality: 90	Cohesion: 92	Coherence: 91	Style Consistency: 88	Terminology Consistency: 85	Average: 89.20
+zh.7	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 95	Average: 90.00
+zh.8	General Quality: 90	Cohesion: 88	Coherence: 92	Style Consistency: 87	Terminology Consistency: 95	Average: 90.40
+zh.9	General Quality: 92	Cohesion: 90	Coherence: 93	Style Consistency: 88	Terminology Consistency: 95	Average: 91.60
+zh.10	General Quality: 92	Cohesion: 95	Coherence: 94	Style Consistency: 90	Terminology Consistency: 98	Average: 93.80
+zh.11	General Quality: 90	Cohesion: 92	Coherence: 93	Style Consistency: 88	Terminology Consistency: 95	Average: 91.60
+zh.12	General Quality: 92	Cohesion: 90	Coherence: 93	Style Consistency: 88	Terminology Consistency: 95	Average: 91.60
+zh.13	General Quality: 65	Cohesion: 70	Coherence: 68	Style Consistency: 60	Terminology Consistency: 75	Average: 67.60
+zh.14	General Quality: 88	Cohesion: 92	Coherence: 90	Style Consistency: 85	Terminology Consistency: 93	Average: 89.60
+zh.15	General Quality: 94	Cohesion: 96	Coherence: 95	Style Consistency: 97	Terminology Consistency: 98	Average: 96.00
+Average Scores	General Quality:	87.81	Cohesion:	89.25	Coherence:	90.00	Style Consistency:	85.19	Terminology Consistency:	89.00
+Meta	88.25

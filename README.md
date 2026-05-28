@@ -1,15 +1,35 @@
 # LoongDocMT
-This repository anonymously releases the codes and data for the paper Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection
+This repository anonymously releases the codes and data for the paper Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection.
+
+<div align="center">
+    <img src="images/logo.png" width=200></img>
+    <p class="image-caption">Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection</p>
+</div>
 
 ## **🔗 Quick Links**
 
 - **[About Loong](#about)**
 - **[File Structure](#structure)**
-- **[Requirements](#requirements)**
+- **[Installation](#installation)**
 - **[Quick Start](#start)**
 
 ## **🐉 About Loong**<a name="about"></a>
 Loong is a human-like long document translation agent that employs reasoning-driven adaptive context selection optimized via reinforcement learning to resolve context limitation and noise issues in DocMT-LLMs, achieving significant gains in document translation quality and ultra-long document stability.
+
+Loong is equipped with a "3E" memory model to store and retrieve candidate context information as the segment-wise translation proceeds:
+- Enssence: Summaries of the processed segments
+- Exemplar: Source-Target sentence pairs of all previous contents
+- Entity: Structured records of all appeared entities (people, location, events, etc.)
+
+Loong actively filter these candidate context items with a three-step observe-and-act trajectory.
+In each step, Loong observe one kind of candidate items, determine whether it is helpful to translation through reasoning, and make its final information selection.
+The filtered information subset is then employed to guide the translation process of the current segment to produce the final output.
+We conduct parallel samping on each step, constructing preference data for DPO training to optimize Loong's context selection and utilization strategies, enhancing its overall performance.
+
+<div align="center">
+    <img src="images/framework.png"></img>
+    <p class="image-caption">The Framework of Loong</p>
+</div>
 
 ## **📜 File Structure**<a name="structure"></a>
 | Directory           | Contents                                                       |
@@ -22,25 +42,60 @@ Loong is a human-like long document translation agent that employs reasoning-dri
 | `./inference`       | Inference launcher (`run_infer.sh`)                            |
 | `./evaluate`        | Scripts for sCOMET, dCOMET and LLM-as-a-Judge                  |
 | `./results`         | Testing outputs                                                |
+| `./installation`    | Pip requirement files for the four conda environments          |
+| `./LLaMA-Factory`   | Vendored copy of LLaMA-Factory installed editably by the training environment |
+| `./COMET`           | Vendored copy of `doc-mt-metrics/COMET` installed editably by the dCOMET evaluation environment |
 
 
-## **🛠️ Requirements**<a name="requirements"></a>
-Loong conduct LLM inference via vLLM deployments.
-- Python 3.11.11
-- Pytorch 2.9.1+cu121
-- transformers==4.57.0
-- openai==1.90.0
-- vllm==0.11.2
-- llamafactory==0.9.4.dev0
-- sentence-transformers==4.1.0
+## **🛠️ Installation**<a name="installation"></a>
 
-## **🚀 Quick Start**<a name="start"></a>
+Loong relies on five separate conda environments — each isolates a stage of the
+pipeline with conflicting dependency requirements (vLLM serving, the agent
+client used for sampling/inference, LLaMA-Factory training, the sentence-level
+COMET service, and the document-level COMET fork). The pip requirement files
+for all five are provided under `./installation`, and the two environments
+that depend on editable installs (`llama-factory` and `doccomet`) point at
+vendored copies of the source repositories shipped with this release.
 
-### **Installation**
+| Environment        | Purpose                                  | Requirements                                  |
+| ------------------ | ---------------------------------------- | --------------------------------------------- |
+| `vllm`             | vLLM model serving (deployed via OpenAI-compatible API) | `installation/requirements_vllm.txt`          |
+| `loong`            | Trajectory sampling and inference (client side) | `installation/requirements_loong.txt`         |
+| `llama-factory`    | SFT + LoRA-DPO fine-tuning               | `installation/requirements_llama-factory.txt` |
+| `comet`            | sCOMET service deployment and scoring    | `installation/requirements_comet.txt`         |
+| `doccomet`         | dCOMET (document-level COMET) evaluation | `installation/requirements_doccomet.txt`      |
+
+Create each environment and install its dependencies:
 
 ```bash
-pip install -r requirements.txt
+# vLLM serving
+conda create -n vllm python=3.11 -y
+conda activate vllm
+pip install -r installation/requirements_vllm.txt
+
+# Sampling and inference (client)
+conda create -n loong python=3.11 -y
+conda activate loong
+pip install -r installation/requirements_loong.txt
+
+# Training (editable install of vendored LLaMA-Factory)
+conda create -n llama-factory python=3.11 -y
+conda activate llama-factory
+pip install -r installation/requirements_llama-factory.txt
+
+# sCOMET service + evaluation
+conda create -n comet python=3.10 -y
+conda activate comet
+pip install -r installation/requirements_comet.txt
+
+# dCOMET (editable install of vendored doc-mt-metrics/COMET)
+conda create -n doccomet python=3.9 -y
+conda activate doccomet
+pip install -r installation/requirements_doccomet.txt
 ```
+
+
+## **🚀 Quick Start**<a name="start"></a>
 
 ### **Training Data Sampling**
 
@@ -49,24 +104,39 @@ Training data is produced in two steps: first sample raw trajectories with
 `run_process.sh`. A COMET scoring service must be deployed beforehand, since the
 sampling pipeline calls it on every trajectory.
 
-#### Step 0 — Deploy COMET service
+#### Step 0 — Deploy serving endpoints
 
-- evaluate/deploy_comet.sh
+Two services must be running before Step 1: a vLLM-served LLM (consumed by the
+agent) and a COMET scorer (consumed for trajectory rewards). Their endpoints
+must match the `urls` and `comet_apis` arrays used by `run_sample.sh`.
 
-Launches a COMET model server in the background (logs to `evaluate/deploy.log`).
-The endpoint exposed here must match the `comet_apis` entries used by Step 1
-(and the `comet_api` argument used later by sCOMET evaluation).
+**vLLM serving** — run inside the `vllm` environment. Launch one process per
+GPU you want to dedicate to serving; the endpoints are then passed to Step 1
+through the `urls` array.
+
+```bash
+conda activate vllm
+export LLM_MODEL=qwen   # must match --served-model-name below; read by the sampling/inference clients
+CUDA_VISIBLE_DEVICES=0 nohup vllm serve Qwen3-8B \
+    --host 0.0.0.0 \
+    --port 8010 \
+    --served-model-name "$LLM_MODEL" \
+    --enable-prefix-caching \
+    &> vllm.log &
+```
+
+**COMET serving** — `evaluate/deploy_comet.sh` launches a COMET model server in
+the background (logs to `evaluate/deploy.log`). The endpoint exposed here must
+match the `comet_apis` entries used by Step 1 (and the `comet_api` argument
+used later by sCOMET evaluation).
 
 Set the following inside the script before running:
 
-- `CUDA_VISIBLE_DEVICES` — GPU id(s) to bind to.
-- `COMET_GPUS`           — number of GPUs to use for the service.
-- `--port`               — listening port (default `8090`).
-
-Also set the COMET checkpoint path inside `deploy.py` (the `wmt22-comet-da` model
-to serve).
+- `model_path` — path to the COMET checkpoint to serve (e.g., `wmt22-comet-da/model.ckpt`).
+- `port`       — listening port (default `8090`).
 
 ```bash
+conda activate comet
 bash evaluate/deploy_comet.sh
 ```
 
@@ -92,27 +162,21 @@ Set the following inside the script before running:
 - `window_size`    — number of sentences per page within a document.
 
 ```bash
-bash sample/run_sample.sh
+conda activate loong
+LLM_MODEL=qwen bash sample/run_sample.sh   # value must match the --served-model-name registered on the vLLM endpoints
 ```
 
 #### Step 2 — Dataset construction
 
 - sample/run_process.sh
 
-Iterates over `en-zh`, `en-de`, `en-fr` and invokes `process.py` twice per language —
-once for the SFT split (`openai` format) and once for the DPO split (`sharegpt` format) —
-producing one `*_tool.json` and one `*_trans_*.json` file per stage plus a
-`dataset_info.json` registry consumable by LLaMA-Factory.
+Constructs the SFT and DPO training data from the trajectories sampled in Step 1.
 
 Set the following inside the script before running:
 
-- `--input_path`        — directory holding the per-chapter trajectories emitted by Step 1.
-- `--output_path`       — directory where the SFT/DPO JSON files and `dataset_info.json` are written.
-- `--language`          — translation direction; iterated by the loop.
-
-Also set the tokenizer path inside `process.py` (used for length filtering):
-
-- `tokenizer = AutoTokenizer.from_pretrained(...)` — replace with the path to the LLM's tokenizer.
+- `input_path`     — directory holding the per-chapter trajectories emitted by Step 1.
+- `output_path`    — directory where the SFT/DPO JSON files and `dataset_info.json` are written.
+- `tokenizer_path` — path to the LLM's tokenizer (used for length filtering).
 
 ```bash
 bash sample/run_process.sh
@@ -135,13 +199,29 @@ Set the following inside the recipe files before running:
 - `lora_dpo.yaml`
   - `model_name_or_path` — path to the SFT checkpoint.
   - `dataset_dir`        — path to the DPO training data.
-  - `template`           — `qwen` for Qwen2.5, `qwen3_nothink` for Qwen3, `llama3` for Llama3.1.
+  - `template`           — `qwen` for Qwen2.5, `qwen3` for Qwen3, `llama3` for Llama3.1.
 
 ```bash
+conda activate llama-factory
 bash train/run_train.sh
 ```
 
 ### **Inference**
+
+Inference also depends on a vLLM-served LLM — point it at the fine-tuned
+checkpoint produced by **Model Tuning**. Launch one process per GPU you want to
+dedicate to serving, and pass the endpoint(s) to `run_infer.sh` via `address`.
+
+```bash
+conda activate vllm
+export LLM_MODEL=qwen   # must match --served-model-name below; read by the inference client
+CUDA_VISIBLE_DEVICES=0 nohup vllm serve <path/to/finetuned/checkpoint> \
+    --host 0.0.0.0 \
+    --port 8010 \
+    --served-model-name "$LLM_MODEL" \
+    --enable-prefix-caching \
+    &> vllm.log &
+```
 
 - inference/run_infer.sh
 
@@ -150,12 +230,13 @@ and writes hypotheses to the result directory.
 
 Set the following inside the script before running:
 
-- `address`  — deployed vLLM model API (e.g., `127.0.0.1:8000`).
-- `language` — translation direction, choices=[en-zh,en-de,en-fr,zh-en,de-en,fr-en].
-- `src_file` — source test file.
+- `address`   — deployed vLLM model API (e.g., `127.0.0.1:8000`).
+- `language`  — translation direction, choices=[en-zh,en-de,en-fr,zh-en,de-en,fr-en].
+- `src_file`  — source test file.
 
 ```bash
-bash inference/run_infer.sh
+conda activate loong
+LLM_MODEL=qwen bash inference/run_infer.sh   # value must match the --served-model-name registered on the vLLM endpoint
 ```
 
 ### **Evaluation**
@@ -192,10 +273,8 @@ The path to the `wmt22-comet-da` checkpoint can be provided either as a 4th posi
 argument or through the `COMET_MODEL_PATH` environment variable.
 
 ```bash
+conda activate doccomet
 bash eval_dcomet_total.sh <data_dir> <result_dir> <language> <comet_model_path>
-# or:
-export COMET_MODEL_PATH=/path/to/wmt22-comet-da/model.ckpt
-bash eval_dcomet_total.sh <data_dir> <result_dir> <language>
 ```
 
 #### LLM-as-a-Judge

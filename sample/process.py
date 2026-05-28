@@ -92,6 +92,7 @@ def main():
     # parser.add_argument("--max_docs", type=int, default=None)
     parser.add_argument("--tool_data_size", type=int, default=None)
     parser.add_argument("--trans_data_size", type=int, default=None)
+    parser.add_argument("--tokenizer_path", type=str, required=True)
     args = parser.parse_args()
 
     if args.stage == 'sft' and args.multi_pairs == 'True':
@@ -153,7 +154,7 @@ def main():
         print(f"{data} Others: {len(whole_data_others[data])}")
         print(f"{data} N/A: {len(whole_data_na[data])}")
     
-    tokenizer = AutoTokenizer.from_pretrained('/path/to/llm/tokenizer')
+    tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_path)
     
     balanced = eval(args.balanced)
     final_data = []

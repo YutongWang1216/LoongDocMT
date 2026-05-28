@@ -10,13 +10,10 @@ import uvicorn
 
 app = FastAPI(title="COMET Evaluation API")
 
-MODEL_PATH = "/path/to/wmt22-comet-da/model.ckpt"
 GPUS = int(os.environ.get("COMET_GPUS", "0"))
+MODEL_PATH = os.environ.get("COMET_MODEL_PATH")
 
-model = load_from_checkpoint(MODEL_PATH)
-if GPUS > 0:
-    model = model.cuda()
-print(f"[deploy] model loaded on {'GPU' if GPUS > 0 else 'CPU'}", flush=True)
+model = None
 
 request_queue: asyncio.Queue = None
 MAX_BATCH_INSTANCES = 256
@@ -85,6 +82,17 @@ async def evaluate(data: InputData):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Deploy COMET Evaluation API")
     parser.add_argument("--port", type=int, default=8090, help="Port to run the API on")
+    parser.add_argument("--model_path", type=str, default=MODEL_PATH,
+                        help="Path to the COMET checkpoint (e.g., wmt22-comet-da/model.ckpt). "
+                             "Falls back to the COMET_MODEL_PATH environment variable.")
     args = parser.parse_args()
+
+    if not args.model_path:
+        parser.error("--model_path is required (or set COMET_MODEL_PATH).")
+
+    model = load_from_checkpoint(args.model_path)
+    if GPUS > 0:
+        model = model.cuda()
+    print(f"[deploy] model loaded from {args.model_path} on {'GPU' if GPUS > 0 else 'CPU'}", flush=True)
 
     uvicorn.run(app, host="0.0.0.0", port=args.port)

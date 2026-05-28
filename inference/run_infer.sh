@@ -6,10 +6,9 @@ src_file=
 src_lang=${language%-*}
 tgt_lang=${language#*-}
 
-
 output_dir=./results
 
-python -u infer.py \
+python -u ../scripts/infer.py \
     --src_file $src_file \
     --output_path $output_dir \
     --window_size 10 \

@@ -1,10 +1,15 @@
-for language in en-zh en-de en-fr; do
+input_path=         # directory holding per-chapter trajectories emitted by run_sample.sh
+output_path=./      # directory to write SFT/DPO json files and dataset_info.json
+tokenizer_path=     # path to the LLM's tokenizer (used for length filtering)
+
+for language in en-zh en-de en-fr zh-en de-en fr-en; do
 
     echo "################## sft-$language ##################"
 
     python -u process.py \
-        --input_path  \
-        --output_path ./ \
+        --input_path $input_path \
+        --output_path $output_path \
+        --tokenizer_path $tokenizer_path \
         --max_length 2560 \
         --balanced True \
         --na_ratio 0.33 \
@@ -19,10 +24,11 @@ for language in en-zh en-de en-fr; do
         --max_docs 500
 
     echo "################## dpo-$language ##################"
-    
+
     python -u process.py \
-        --input_path  \
-        --output_path ./ \
+        --input_path $input_path \
+        --output_path $output_path \
+        --tokenizer_path $tokenizer_path \
         --max_length 2560 \
         --balanced True \
         --na_ratio 0.33 \

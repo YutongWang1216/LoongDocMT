@@ -12,6 +12,7 @@ This repository anonymously releases the codes and data for the paper Loong: A H
 - **[File Structure](#structure)**
 - **[Installation](#installation)**
 - **[Quick Start](#start)**
+- **[Acknowledgements](#acknowledgements)**
 
 ## **🐉 About Loong**<a name="about"></a>
 Loong is a human-like long document translation agent that employs reasoning-driven adaptive context selection optimized via reinforcement learning to resolve context limitation and noise issues in DocMT-LLMs, achieving significant gains in document translation quality and ultra-long document stability.
@@ -300,4 +301,15 @@ export OPENAI_BASE_URL=...    # OpenAI-compatible endpoint
 ```bash
 bash eval_llm.sh <data_dir> <result_dir> <language>
 ```
+
+## **🙏 Acknowledgements**<a name="acknowledgements"></a>
+
+This codebase builds on the following open-source projects, and we thank their
+authors and maintainers for releasing them:
+
+- [vLLM](https://github.com/vllm-project/vllm) — high-throughput LLM serving used to host the agent's translation backbone.
+- [LlamaFactory](https://github.com/hiyouga/LlamaFactory) — training framework used for SFT and LoRA-DPO fine-tuning.
+- [uvicorn](https://github.com/Kludex/uvicorn) — ASGI server that hosts our COMET evaluation endpoint.
+- [COMET](https://github.com/Unbabel/COMET) — sentence-level translation quality metric.
+- [doc-mt-metrics](https://github.com/amazon-science/doc-mt-metrics) — document-level COMET extension used for dCOMET evaluation.
 

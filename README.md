@@ -6,6 +6,12 @@ This repository anonymously releases the codes and data for the paper Loong: A H
     <p class="image-caption">Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection</p>
 </div>
 
+
+## **📣 News**
+
+- **[28/05/2026] Our code and dataset for DelTA is released!**
+- **[29/05/2026] Our paper is published on arXiv: [arXiv:2605.30274](https://arxiv.org/abs/2605.30274)!**
+
 ## **🔗 Quick Links**
 
 - **[About Loong](#about)**

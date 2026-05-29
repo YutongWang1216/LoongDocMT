@@ -12,6 +12,7 @@ This repository anonymously releases the codes and data for the paper Loong: A H
 - **[File Structure](#structure)**
 - **[Installation](#installation)**
 - **[Quick Start](#start)**
+- **[Citation](#citation)**
 - **[Acknowledgements](#acknowledgements)**
 
 ## **🐉 About Loong**<a name="about"></a>
@@ -301,6 +302,21 @@ export OPENAI_BASE_URL=...    # OpenAI-compatible endpoint
 ```bash
 bash eval_llm.sh <data_dir> <result_dir> <language>
 ```
+
+## **📝 Citation**<a name="citation"></a>
+If you find this repo useful, please cite our paper as:
+```
+@misc{wang2026loonghumanlikelongdocument,
+      title={Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection}, 
+      author={Yutong Wang and Xuebo Liu and Derek F. Wong and Zhilin Li and Rongqing Jiang and Min Zhang and Shimin Tao and Daimeng Wei and Min Zhang},
+      year={2026},
+      eprint={2605.30274},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.30274}, 
+}
+```
+
 
 ## **🙏 Acknowledgements**<a name="acknowledgements"></a>
 

@@ -9,7 +9,7 @@ This repository anonymously releases the codes and data for the paper Loong: A H
 
 ## **📣 News**
 
-- **[28/05/2026] Our code and dataset for DelTA is released!**
+- **[28/05/2026] Our code for Loong is released!**
 - **[29/05/2026] Our paper is published on arXiv: [arXiv:2605.30274](https://arxiv.org/abs/2605.30274)!**
 
 ## **🔗 Quick Links**

@@ -1,5 +1,5 @@
 # LoongDocMT
-This repository anonymously releases the codes and data for the paper Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection.
+This repository releases the codes and data for the paper Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection.
 
 <div align="center">
     <img src="images/logo.png" width=200></img>

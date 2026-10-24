@@ -1,0 +1,26 @@
+Stell dir einen sehr langen Webseiteninhalt mit vielen Abschnitten vor (z.B. eine Single-Page-HTML-Spezifikation). Wenn der Benutzer einen bestimmten Abschnitt anspricht (z.B. page.html#section7), was wenn der Webserver diesen Abschnitt zuerst und den Rest danach streamt?
+Stream-Reihenfolge:
+1. Anfang des HTML-Dokuments bis zur <body>
+2. HTML für Abschnitt 7
+3. HTML für Abschnitt 1, 2, 3 usw.
+Der Browser würde dann sicherstellen, dass die Abschnitte 1 bis 6 *oben* vor Abschnitt 7 auf der Webseite eingefügt werden.
+Macht das Sinn? Würde das nützlich sein?
+Was ich erreichen möchte, ist, dass die verlinkte Abschnitt (#section7) so schnell wie möglich geladen wird, ohne dass es erforderlich wäre, mit JavaScript etwas Neu zu implementieren. Ich möchte einfach eine sehr lange HTML-Dokument haben, bei der jedoch die verlinkten Abschnitte so schnell wie möglich geladen werden. Es sollte nur mit HTML funktionieren.
+Inhalt könnte so gestreamt werden und der Browser würde jeden <contents> in sein <div> einfügen.
+<div id=sec1></div>
+<div id=sec2></div>
+u.
+<div id=sec7>Abschnitt 7…</div>
+<contents for=sec1>Abschnitt 1…</contents>
+<contents for=sec2>Abschnitt 2…</contents>
+usw.
+Es würde unsortiert streamt werden, aber der Browser würde das HTML-Dokument so zusammenbauen, als wäre es sortiert streamt worden.
+@user22 Sie können Dokumente so umsortieren, ohne JavaScript garantiert nicht. Sie können den Hash-Anteil der URL jedoch nicht verwenden, wenn Sie etwas vom Server haben möchten, und Sie können die Suchparameter der Query-Stringanfrage verwenden, um dem Server mitzuteilen, welche Abschnitt Sie zuerst möchten. Sie haben eine Wahl bezüglich der Umordnung der Teile:
+1. Verwenden Sie CSS
+2. Verwenden Sie ein Vorlagenschema mit Slots
+@user23 Ja. Das Problem ist, dass die visuelle Reihenfolge (was der Benutzer sieht), nicht mit der Reihenfolge im DOM übereinstimmt. Es könnte nützlich sein, wenn es eine HTML-Funktion gäbe, die es erlaubt, Inhalte unsortiert auszustoßen, aber dann würde das Browser-Programm den Inhalt im DOM auf sortierte Weise anordnen.
+Aber der Ansatz mit den Slots wirkt versprechend. Ich werde es mal versuchen.
+@user22 Oha, willst du, dass das Browser-Programm die Reihenfolge im DOM korrigiert?
+@user23 Ja, das ist der Gedanke. Das Abschnitt 7 würde zuerst ausgestoßen, damit der Benutzer es so schnell wie möglich sehen kann. Wenn dies ohne Beeinflussung der Reihenfolge im DOM möglich wäre, wäre das gut, sodass das Browser-Programm sicherstellen würde, dass die endgültige Reihenfolge im DOM dem visuellen Erscheinungsbild entspricht.
+In anderen Worten, stoße Abschnitt 7 zuerst aus, aber sorg dafür, dass das endgültige Ergebnis (DOM und visuell) so aussieht, als wären alle Abschnitte in der Reihenfolge ausgestoßen worden.
+@user22 @user23 Habt einen Blick auf PHOOOS ohne JS: https://github.com/niutech/phooos

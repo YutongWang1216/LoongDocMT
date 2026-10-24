@@ -1,0 +1,18 @@
+de.0	General Quality: 35	Cohesion: 30	Coherence: 25	Style Consistency: 40	Terminology Consistency: 30	Average: 32.00
+de.1	General Quality: 35	Cohesion: 30	Coherence: 25	Style Consistency: 40	Terminology Consistency: 20	Average: 30.00
+de.2	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+de.3	General Quality: 48	Cohesion: 45	Coherence: 50	Style Consistency: 40	Terminology Consistency: 35	Average: 43.60
+de.4	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+de.5	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+de.6	General Quality: 62	Cohesion: 60	Coherence: 58	Style Consistency: 55	Terminology Consistency: 65	Average: 60.00
+de.7	General Quality: 45	Cohesion: 40	Coherence: 40	Style Consistency: 35	Terminology Consistency: 30	Average: 38.00
+de.8	General Quality: 45	Cohesion: 40	Coherence: 50	Style Consistency: 35	Terminology Consistency: 30	Average: 40.00
+de.9	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 75	Average: 67.60
+de.10	General Quality: 65	Cohesion: 60	Coherence: 65	Style Consistency: 60	Terminology Consistency: 70	Average: 64.00
+de.11	General Quality: 45	Cohesion: 40	Coherence: 50	Style Consistency: 35	Terminology Consistency: 40	Average: 42.00
+de.12	General Quality: 55	Cohesion: 50	Coherence: 55	Style Consistency: 45	Terminology Consistency: 60	Average: 53.00
+de.13	General Quality: 45	Cohesion: 40	Coherence: 50	Style Consistency: 55	Terminology Consistency: 40	Average: 46.00
+de.14	General Quality: 45	Cohesion: 40	Coherence: 35	Style Consistency: 50	Terminology Consistency: 30	Average: 40.00
+de.15	General Quality: 75	Cohesion: 70	Coherence: 75	Style Consistency: 70	Terminology Consistency: 65	Average: 71.00
+Average Scores	General Quality:	52.06	Cohesion:	47.50	Coherence:	51.75	Style Consistency:	47.19	Terminology Consistency:	44.38
+Meta	48.58

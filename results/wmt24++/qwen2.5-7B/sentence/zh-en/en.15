@@ -1,0 +1,26 @@
+Imagine a long webpage with many sections (like in a single-page HTML specification). If a user requests a specific part of it (for example, `page.html#section7`), can the web server transmit just that part first and then the rest of the content later?
+The translation of "流顺序：" into English is "Flow order:"
+1. From the beginning of the HTML document until the `<body>` tag
+2. HTML code for the 7th part
+3. HTML code for Part 1, Part 2, and Part 3, etc.
+The browser should ensure that parts 1 through 6 are inserted above part 7 on the web page.
+Is this reasonable? Will it be effective?
+The goal I want to achieve is to render the linked portion (e.g., #section7) as quickly as possible without having to reimplement it with JavaScript or similar technologies. What I'm aiming for is a very long HTML document where the linked portions still render quickly. It can be achieved using just HTML.
+The content can be streamed like this, and then the browser will insert each `<contents>` element into the corresponding `<div>` element.
+The provided text is an HTML code snippet and not a Chinese sentence to translate. If you intended to ask for the translation of a Chinese sentence into English, please provide the Chinese sentence, and I'll be happy to help with the translation. If you need assistance with the HTML code or have any other questions related to it, feel free to ask!
+The provided text `<div id="sec2"></div>` is an HTML snippet and not a sentence in Chinese to be translated. If you intended to provide a Chinese sentence that needs translation, please provide it, and I'll be happy to translate it into English for you.
+The Chinese word "等等" can be translated to English in a few different ways depending on the context, but the most common translation is "hold on" or "wait a moment." It can also mean "etc." (et cetera) if you are listing items. If you provide more context, I can give a more precise translation.
+The HTML code you provided is a div element with an ID of "sec7" and some text "section 7…". When translated or rather described in an English context, it would be:  ```html <div id="sec7">section 7…</div> ```  This is not a sentence to translate but a piece of HTML code. If you need any explanation about what this code does or how to use it, feel free to ask!
+The sentence you provided seems to be a mix of Chinese and an HTML-like tag structure rather than a full Chinese sentence. If you intended to translate a Chinese sentence, please provide the actual Chinese text.   However, if you want to understand what the given structure means:  - `<contents for=sec1>` is an HTML-like tag that doesn't have a standard meaning in web development but appears to be custom-defined. - `section 1…` is likely the content inside this tag.  If you meant to translate "section 1" into English, it would simply be:  **Section 1...**  Please clarify if you need a different translation or assistance.
+It seems like you're providing an HTML-like snippet rather than a full sentence in Chinese. To translate a sentence, I'll need the actual text first. However, if you want to explain what this snippet means:  The snippet `<contents for=sec2>section 2…</contents>` appears to be a custom HTML or XML tag indicating that the content within it pertains to section 2.   If you have a specific Chinese sentence you'd like translated, please provide it!
+The sentence "etc." you provided is actually already in English. It's an abbreviation for "et cetera," which means "and other similar things" in Latin. If you meant to translate "等等" (děngděng) from Chinese, the translation would be "etc." or "and so on."
+Although the order of the stream is乱序的 (out of order), the browser assembles the HTML document in the correct order.
+@user22 Actually, you can reorder the document content without using JavaScript. However, if you want the server to do something, you cannot use the hash part of the URL; instead, you need to use query string parameters to inform the server which part you want to see first. As for reordering the page content, you have the following options:
+1. Using CSS
+2. Use a template with slots
+@user23 That's correct. The issue lies in the mismatch between the visual order (the order in which the user sees things) and the DOM order. If HTML could support unordered stream transmission, and the browser could still arrange the content in order within the DOM, it might be quite useful.
+However, the slot method seems promising. I'll give it a try.
+@user22 Oh, so you want the browser to automatically correct the DOM order?
+@user23 That's right, that's exactly how I see it. The sole reason for transmitting the 7th part first is to allow users to see it as soon as possible. It would be great if we could achieve this without affecting the DOM order, ensuring that the browser can guarantee the final DOM order and visual order to be consistent.
+In other words, transmit the 7th part first, but the final result (the DOM and visual effects) should be exactly the same as the result when all parts are transmitted in order.
+Here is the translation of the sentence:  "@user22 @user33 you can check out PHOOOS without JS: https://github.com/niutech/phooos"

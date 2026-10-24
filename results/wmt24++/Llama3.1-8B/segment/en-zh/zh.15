@@ -1,0 +1,26 @@
+Imagine a very long web page with lots of sections (e.g., single-page HTML spec). If the user requests a specific section (e.g. page.html#section7), what if the web server streamed that section first and the other sections after that?
+Stream order:
+1. start of HTML document up to
+2. HTML for section 7
+3. HTML for section 1, 2, 3, etc.
+The browser would then make sure to insert the sections 1 to 6 *above* section 7 on the web page.
+Does this make sense? Would this be useful?
+What I want to achieve is have the linked section (#section7) render as fast as possible without having to re-implement stuff with JavaScript. I just want to have a super long HTML document but still have linked sections render as fast as possible. It should just work with HTML.
+The content could be streamed like this, and then the browser would inject each <contents> into its <div>.
+<div id="sec1"></div>
+<div id=sec2></div>
+etc.
+<div id=sec7>section 7…</div>
+<contents for=sec1>section 1…</contents>
+<contents for=sec2>section 2…</contents>
+etc.
+它将会被流式传输出序，但浏览器会将HTML文档组装起来好像它是按照顺序流式传输一样。
+@user22 你可以不使用JS就对文档进行重新排列。你不能使用URL的哈希部分，如果你想要服务器做一些事情的话，但你可以使用查询字符串搜索参数来让服务器知道你想哪个部分首先。如果你想重新排列部分，你有以下几种选择：
+1. 使用CSS
+2. 使用具有插槽的模板
+@user23 问题在于，用户看到的视觉顺序与 DOM 顺序不一致。有一个 HTML 特性可以允许流式传输不按顺序的可能很有帮助，但浏览器将在DOM中按顺序排列内容。
+但插槽方法看起来很有前途，我会尝试一下。
+@user22 啊，你想要浏览器修复 DOM 顺序吗？
+@user23 是的，这就是想法。第 7 节将以首先流式传输的原因是用户可以尽快查看它。如果可以做到这一点而不影响 DOM 顺序，那就很好，浏览器将确保最终的 DOM 顺序与视觉顺序匹配。
+换句话说，先流式传输第 7 节，但结果（DOM 和视觉）应表现得像所有节都按顺序流式传输一样。
+@user22 @user23 有看一下 PHOOOS 的非 JS 版本：https://github.com/niutech/phooos

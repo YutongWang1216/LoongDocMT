@@ -1,0 +1,18 @@
+fr.0	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+fr.1	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+fr.2	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 65	Average: 67.00
+fr.3	General Quality: 70	Cohesion: 60	Coherence: 75	Style Consistency: 55	Terminology Consistency: 65	Average: 65.00
+fr.4	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 72	Terminology Consistency: 68	Average: 74.60
+fr.5	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+fr.6	General Quality: 90	Cohesion: 88	Coherence: 92	Style Consistency: 87	Terminology Consistency: 85	Average: 88.40
+fr.7	General Quality: 80	Cohesion: 75	Coherence: 85	Style Consistency: 70	Terminology Consistency: 75	Average: 77.00
+fr.8	General Quality: 80	Cohesion: 75	Coherence: 78	Style Consistency: 70	Terminology Consistency: 75	Average: 75.60
+fr.9	General Quality: 90	Cohesion: 88	Coherence: 92	Style Consistency: 85	Terminology Consistency: 93	Average: 89.60
+fr.10	General Quality: 82	Cohesion: 88	Coherence: 85	Style Consistency: 75	Terminology Consistency: 78	Average: 81.60
+fr.11	General Quality: 68	Cohesion: 70	Coherence: 72	Style Consistency: 65	Terminology Consistency: 75	Average: 70.00
+fr.12	General Quality: 60	Cohesion: 55	Coherence: 65	Style Consistency: 50	Terminology Consistency: 60	Average: 58.00
+fr.13	General Quality: 55	Cohesion: 60	Coherence: 50	Style Consistency: 65	Terminology Consistency: 45	Average: 55.00
+fr.14	General Quality: 68	Cohesion: 75	Coherence: 72	Style Consistency: 65	Terminology Consistency: 60	Average: 68.00
+fr.15	General Quality: 92	Cohesion: 95	Coherence: 94	Style Consistency: 90	Terminology Consistency: 88	Average: 91.80
+Average Scores	General Quality:	74.81	Cohesion:	73.38	Coherence:	77.19	Style Consistency:	68.69	Terminology Consistency:	69.19
+Meta	72.65

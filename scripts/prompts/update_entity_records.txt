@@ -1,0 +1,9 @@
+"{name}" is an entity in a long document, and there is a current record containing relevant information about the entity. Given a new paragraph that mentions this entity, please update its record accordingly.
+
+<Current record>
+{prev_record}
+
+<New paragraph>
+{text}
+
+<Updated record>

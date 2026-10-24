@@ -1,0 +1,27 @@
+de.0	General Quality: 60	Cohesion: 65	Coherence: 62	Style Consistency: 55	Terminology Consistency: 50	Average: 58.40
+de.1	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 70	Average: 68.00
+de.2	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 50	Average: 52.00
+de.3	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 60	Average: 54.00
+de.4	General Quality: 60	Cohesion: 55	Coherence: 60	Style Consistency: 50	Terminology Consistency: 55	Average: 56.00
+de.5	General Quality: 60	Cohesion: 55	Coherence: 65	Style Consistency: 60	Terminology Consistency: 50	Average: 58.00
+de.6	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 72	Average: 67.00
+de.7	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+de.8	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 60	Average: 54.00
+de.9	General Quality: 70	Cohesion: 65	Coherence: 68	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+de.10	General Quality: 60	Cohesion: 55	Coherence: 60	Style Consistency: 50	Terminology Consistency: 45	Average: 54.00
+de.11	General Quality: 75	Cohesion: 70	Coherence: 72	Style Consistency: 68	Terminology Consistency: 65	Average: 70.00
+de.12	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 72	Average: 67.00
+de.13	General Quality: 62	Cohesion: 60	Coherence: 65	Style Consistency: 58	Terminology Consistency: 68	Average: 62.60
+de.14	General Quality: 65	Cohesion: 60	Coherence: 65	Style Consistency: 55	Terminology Consistency: 60	Average: 61.00
+de.15	General Quality: 62	Cohesion: 58	Coherence: 60	Style Consistency: 55	Terminology Consistency: 65	Average: 60.00
+de.16	General Quality: 65	Cohesion: 60	Coherence: 68	Style Consistency: 55	Terminology Consistency: 60	Average: 61.60
+de.17	General Quality: 60	Cohesion: 55	Coherence: 60	Style Consistency: 50	Terminology Consistency: 55	Average: 56.00
+de.18	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 65	Average: 67.00
+de.19	General Quality: 65	Cohesion: 60	Coherence: 62	Style Consistency: 58	Terminology Consistency: 55	Average: 60.00
+de.20	General Quality: 65	Cohesion: 60	Coherence: 62	Style Consistency: 55	Terminology Consistency: 58	Average: 60.00
+de.21	General Quality: 55	Cohesion: 60	Coherence: 65	Style Consistency: 50	Terminology Consistency: 60	Average: 58.00
+de.22	General Quality: 65	Cohesion: 60	Coherence: 70	Style Consistency: 55	Terminology Consistency: 60	Average: 62.00
+de.23	General Quality: 65	Cohesion: 60	Coherence: 68	Style Consistency: 55	Terminology Consistency: 60	Average: 61.60
+de.24	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 75	Average: 67.60
+Average Scores	General Quality:	63.64	Cohesion:	59.92	Coherence:	65.68	Style Consistency:	55.36	Terminology Consistency:	60.00
+Meta	60.92

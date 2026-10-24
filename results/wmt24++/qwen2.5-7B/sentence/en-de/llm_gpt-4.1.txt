@@ -1,0 +1,18 @@
+de.0	General Quality: 35	Cohesion: 30	Coherence: 25	Style Consistency: 20	Terminology Consistency: 40	Average: 30.00
+de.1	General Quality: 45	Cohesion: 40	Coherence: 50	Style Consistency: 35	Terminology Consistency: 30	Average: 40.00
+de.2	General Quality: 62	Cohesion: 55	Coherence: 60	Style Consistency: 58	Terminology Consistency: 65	Average: 60.00
+de.3	General Quality: 45	Cohesion: 35	Coherence: 40	Style Consistency: 30	Terminology Consistency: 25	Average: 35.00
+de.4	General Quality: 45	Cohesion: 40	Coherence: 35	Style Consistency: 30	Terminology Consistency: 35	Average: 37.00
+de.5	General Quality: 35	Cohesion: 30	Coherence: 25	Style Consistency: 20	Terminology Consistency: 30	Average: 28.00
+de.6	General Quality: 48	Cohesion: 45	Coherence: 50	Style Consistency: 40	Terminology Consistency: 55	Average: 47.60
+de.7	General Quality: 55	Cohesion: 60	Coherence: 50	Style Consistency: 45	Terminology Consistency: 60	Average: 54.00
+de.8	General Quality: 35	Cohesion: 30	Coherence: 40	Style Consistency: 25	Terminology Consistency: 30	Average: 32.00
+de.9	General Quality: 45	Cohesion: 40	Coherence: 35	Style Consistency: 30	Terminology Consistency: 50	Average: 40.00
+de.10	General Quality: 35	Cohesion: 30	Coherence: 25	Style Consistency: 20	Terminology Consistency: 40	Average: 30.00
+de.11	General Quality: 55	Cohesion: 50	Coherence: 45	Style Consistency: 40	Terminology Consistency: 50	Average: 48.00
+de.12	General Quality: 45	Cohesion: 35	Coherence: 30	Style Consistency: 25	Terminology Consistency: 40	Average: 35.00
+de.13	General Quality: 25	Cohesion: 10	Coherence: 15	Style Consistency: 10	Terminology Consistency: 20	Average: 16.00
+de.14	General Quality: 45	Cohesion: 40	Coherence: 35	Style Consistency: 40	Terminology Consistency: 35	Average: 39.00
+de.15	General Quality: 40	Cohesion: 35	Coherence: 30	Style Consistency: 25	Terminology Consistency: 40	Average: 34.00
+Average Scores	General Quality:	43.44	Cohesion:	37.81	Coherence:	36.88	Style Consistency:	30.81	Terminology Consistency:	40.31
+Meta	37.85

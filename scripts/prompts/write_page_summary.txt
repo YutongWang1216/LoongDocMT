@@ -1,0 +1,6 @@
+Write a summary for the given paragraph:
+
+<paragraph>
+{text}
+
+<summary>

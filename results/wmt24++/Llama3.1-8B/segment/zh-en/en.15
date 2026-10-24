@@ -1,0 +1,26 @@
+Suppose a web page is very long and has many parts (for example, each part has its own HTML specification). If a user requests a specific part (for example, page.html#section7), can the web server first send this part and then send other parts?
+Streaming order:
+1. HTML document beginning, up to the <body> tag
+2. HTML code for the 7th part
+3. HTML code for the 1st, 2nd, 3rd parts, etc.
+Browsers should ensure that the parts from 1 to 6 are inserted above part 7 of the webpage.
+Is it reasonable? Will it be useful?
+I want to achieve a goal where the linked part (#section7) is rendered as soon as possible without using JavaScript to re-implement it. I want a long HTML document, and the linked part should be rendered as soon as possible. It can be achieved only with HTML.
+Contents can be streamed like this, and then the browser will insert each <contents> element into the corresponding <div> element.
+<div id="sec1"></div>
+<div id=sec2></div>
+wait a minute
+<div id=sec7>section 7…</div>
+<contents for=sec1>section 1…</contents>
+<contents for=sec2>section 2…</contents>
+etc.
+Although the order of a stream transmission is unordered, the browser will assemble the HTML document in order.
+@user22 Actually, it doesn't need to use JS to reorder the document content. However, if you want the server to do something, you can't use the hash part of the URL, but rather use the query string parameter to let the server know which part you want to read first. As for reordering the page content, you have the following options:
+1. Using CSS
+2. Using a template with slots
+@user23 It's correct. The problem lies in the inconsistency between the visual order (what the user sees) and the DOM order. If HTML could support unordered streaming and the browser could arrange the content in DOM in the correct order, it might be useful.
+However, the slot method looks promising. I'll give it a try.
+@user22 Oh, you want the browser to automatically correct the DOM order?
+@user23 That's right. I want that. The only reason I transmitted the 7th part first is to let the user see it as soon as possible. If it could be achieved without affecting the DOM order, that would be great, so the browser could ensure that the final DOM order is consistent with the visual order.
+In other words, transmit the 7th part first, but the final result (DOM and visual effect) should be exactly the same as the result of transmitting all parts in order.
+@user22 @user33 can take a look at Phooos without JS: https://github.com/niutech/phooos

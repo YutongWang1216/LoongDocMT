@@ -1,0 +1,2 @@
+temp_tgt.txt	score: 0.7940
+temp_tgt.txt	score: 0.7940

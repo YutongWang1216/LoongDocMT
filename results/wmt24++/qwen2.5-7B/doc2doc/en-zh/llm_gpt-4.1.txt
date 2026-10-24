@@ -1,0 +1,18 @@
+zh.0	General Quality: 78	Cohesion: 80	Coherence: 82	Style Consistency: 75	Terminology Consistency: 85	Average: 80.00
+zh.1	General Quality: 90	Cohesion: 92	Coherence: 91	Style Consistency: 88	Terminology Consistency: 87	Average: 89.60
+zh.2	General Quality: 78	Cohesion: 72	Coherence: 80	Style Consistency: 70	Terminology Consistency: 60	Average: 72.00
+zh.3	General Quality: 82	Cohesion: 75	Coherence: 85	Style Consistency: 78	Terminology Consistency: 70	Average: 78.00
+zh.4	General Quality: 70	Cohesion: 65	Coherence: 68	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+zh.5	General Quality: 75	Cohesion: 70	Coherence: 72	Style Consistency: 68	Terminology Consistency: 60	Average: 69.00
+zh.6	General Quality: 87	Cohesion: 85	Coherence: 88	Style Consistency: 83	Terminology Consistency: 80	Average: 84.60
+zh.7	General Quality: 75	Cohesion: 70	Coherence: 78	Style Consistency: 68	Terminology Consistency: 85	Average: 75.20
+zh.8	General Quality: 78	Cohesion: 80	Coherence: 75	Style Consistency: 82	Terminology Consistency: 88	Average: 80.60
+zh.9	General Quality: 92	Cohesion: 95	Coherence: 96	Style Consistency: 93	Terminology Consistency: 97	Average: 94.60
+zh.10	General Quality: 92	Cohesion: 95	Coherence: 94	Style Consistency: 90	Terminology Consistency: 97	Average: 93.60
+zh.11	General Quality: 75	Cohesion: 80	Coherence: 78	Style Consistency: 70	Terminology Consistency: 75	Average: 75.60
+zh.12	General Quality: 87	Cohesion: 85	Coherence: 88	Style Consistency: 82	Terminology Consistency: 80	Average: 84.40
+zh.13	General Quality: 55	Cohesion: 60	Coherence: 50	Style Consistency: 65	Terminology Consistency: 70	Average: 60.00
+zh.14	General Quality: 85	Cohesion: 88	Coherence: 90	Style Consistency: 80	Terminology Consistency: 92	Average: 87.00
+zh.15	General Quality: 92	Cohesion: 95	Coherence: 93	Style Consistency: 94	Terminology Consistency: 97	Average: 94.20
+Average Scores	General Quality:	80.69	Cohesion:	80.44	Coherence:	81.75	Style Consistency:	77.88	Terminology Consistency:	79.88
+Meta	80.12

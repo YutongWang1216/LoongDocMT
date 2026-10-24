@@ -1,0 +1,18 @@
+en.0	General Quality: 60	Cohesion: 55	Coherence: 65	Style Consistency: 50	Terminology Consistency: 40	Average: 54.00
+en.1	General Quality: 75	Cohesion: 70	Coherence: 78	Style Consistency: 65	Terminology Consistency: 55	Average: 68.60
+en.2	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+en.3	General Quality: 65	Cohesion: 55	Coherence: 70	Style Consistency: 60	Terminology Consistency: 50	Average: 60.00
+en.4	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+en.5	General Quality: 65	Cohesion: 60	Coherence: 70	Style Consistency: 55	Terminology Consistency: 50	Average: 60.00
+en.6	General Quality: 80	Cohesion: 85	Coherence: 78	Style Consistency: 75	Terminology Consistency: 80	Average: 79.60
+en.7	General Quality: 78	Cohesion: 80	Coherence: 82	Style Consistency: 70	Terminology Consistency: 85	Average: 79.00
+en.8	General Quality: 70	Cohesion: 75	Coherence: 78	Style Consistency: 65	Terminology Consistency: 85	Average: 74.60
+en.9	General Quality: 82	Cohesion: 85	Coherence: 88	Style Consistency: 78	Terminology Consistency: 80	Average: 82.60
+en.10	General Quality: 85	Cohesion: 88	Coherence: 87	Style Consistency: 80	Terminology Consistency: 95	Average: 87.00
+en.11	General Quality: 70	Cohesion: 75	Coherence: 80	Style Consistency: 65	Terminology Consistency: 85	Average: 75.00
+en.12	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 85	Average: 77.60
+en.13	General Quality: 75	Cohesion: 80	Coherence: 85	Style Consistency: 70	Terminology Consistency: 90	Average: 80.00
+en.14	General Quality: 70	Cohesion: 75	Coherence: 80	Style Consistency: 65	Terminology Consistency: 60	Average: 70.00
+en.15	General Quality: 85	Cohesion: 88	Coherence: 90	Style Consistency: 82	Terminology Consistency: 80	Average: 85.00
+Average Scores	General Quality:	73.19	Cohesion:	73.19	Coherence:	78.19	Style Consistency:	66.56	Terminology Consistency:	70.31
+Meta	72.29

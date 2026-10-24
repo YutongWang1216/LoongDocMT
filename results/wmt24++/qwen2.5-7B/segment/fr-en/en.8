@@ -1,0 +1,61 @@
+An objective fisheye, that's maybe a bit too much for a birdhouse.
+We learn from our mistakes.
+I should have known, since I've already made one with a "normal" objective.
+I'll tell you more this weekend when I've installed the second one I've made.
+Let's say that the birds will have better Internet connection than mine in 2015.
+At least, that's the goal.
+The box that already contains a nesting box is using the house's Wi-Fi.
+There's still work to do to connect the other one.
+Well, I hung the other nesting box during the day. Here's how it looks in a good spot in the garden.
+But, a little flash-back: "What's inside?", don't I hear ask.
+At the top is one of these ESP32 modules with a fisheye lens camera and an infrared LED that I scavenged from a Raspberry Pi device.
+Since this plastic box has an odd shape, it's due to the pivoting side panel of the birdhouse. I bought it like this and couldn't modify it, so I had to design my installation around it.
+As there is no electricity in the garden, the entire system is powered by a solar panel and a 18650 cell with a capacity of 2600 mAh.
+I didn't photograph the cell or the charger, but here's a picture of the panel.
+The gray box hanging on the side of the birdhouse houses the battery.
+At full charge, it gives me about 4 hours of energy.
+I call that a feature. So the birds can also have a bit of privacy.
+Initially, I wasn't sure if the Internet connection in our garden would be good enough for this installation. The old access points that I replaced last autumn wouldn't have been sufficient.
+But the new ones cover the area well.
+It's almost disappointing because I had planned to mount a TP-Link cpe210 on the roof and point it downwards towards the garden.
+I could still do it when I install more camera nest boxes, especially in areas far from the house, I might need them.
+Now, for reasons that escape me for the moment, the camera is offline. It turned off just an hour after sunset.
+The battery charge may have stopped three hours before sunset because of a lack of light.
+Perhaps it couldn't fully charge in just under a day.
+I'll see what happens tomorrow.
+I do not have a battery telemetry system. I might add one in a future revision.
+A few more sensors would be good, I think.
+And perhaps a battery that could last all night, at least on paper.
+Oh, and another goal.
+The fish-eye is way too much.
+But I am already looking at parts on Digikey, so I might just get a custom PCB for this use.
+Or not. We'll see.
+And, it is still offline.
+Great.
+Given the solar panels installed on the house, the sun is really high for only about 90 minutes.
+Wait another hour or two to see what happens or doesn't happen.
+Still offline.
+Nothing is ever simple.
+In fact, on the USB-C flash drive I was using to plug in the battery charger, the 5V and ground were reversed.
+I switched the wires around, and now I have a charging indicator.
+The ESP did not connect right away, let's wait a few minutes.
+An hour later: still offline.
+It seems like it's rebooting in a loop and triggering the Tasmota reset functionality.
+I think the panel is just crap. I ordered a bigger one, hoping that it will work.
+Check out what I found in the workshop.
+Un panneau 24 V. Malheureusement, le soleil est tellement bas (et en partie caché par un arbre) que ça redescend à quasiment rien dès que je m'en sers.
+Je pense que je vais attendre jusqu'à demain pour voir si c'est suffisant pour cette installation ou si j'ai besoin du meilleur panneau que j'ai commandé.
+D'après Amazon, j'ai acheté le panneau en 2021, et il devrait générer 12 V à un maximum de 1,2 A.
+Donc, soit quelque chose ne va pas avec ce panneau ou avec mon multimètre, soit ils ont changé les spécifications.
+Bonne nouvelle, tout le monde !
+Ils ont changé les spécifications et celui que j'ai est H.S.
+The titles of the old and new specifications mention a 12 V, 10 W panel.
+This is why I don't delete my old emails.
+Hey, look: the thing reconnected for about half a minute about an hour ago.
+Maybe the panel charged the battery just enough for 38 seconds of power. It would have only taken a little over two hours.
+Devinez quoi : le temps est nuageux aujourd'hui. Donc je ne suis pas sûr que ce panneau solaire (probablement cassé) soit capable de générer assez d'énergie pour faire quoi que ce soit.
+Attendons de voir.
+Dernières nouvelles : j'ai installé le nouveau panneau et il semble fonctionner.
+Si ça se trouve, tout va s'éteindre au coucher du soleil, mais attendons de voir.
+Au fait, j'utilise l'intégration ping dans Home Assistant pour surveiller si c'est connecté ou pas.
+The round-trip time is 102 ms. Not great, but not so bad.

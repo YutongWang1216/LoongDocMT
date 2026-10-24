@@ -1,0 +1,18 @@
+fr.0	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 65	Average: 55.00
+fr.1	General Quality: 45	Cohesion: 40	Coherence: 50	Style Consistency: 35	Terminology Consistency: 30	Average: 40.00
+fr.2	General Quality: 60	Cohesion: 55	Coherence: 65	Style Consistency: 50	Terminology Consistency: 60	Average: 58.00
+fr.3	General Quality: 55	Cohesion: 45	Coherence: 60	Style Consistency: 40	Terminology Consistency: 35	Average: 47.00
+fr.4	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+fr.5	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+fr.6	General Quality: 68	Cohesion: 75	Coherence: 72	Style Consistency: 65	Terminology Consistency: 70	Average: 70.00
+fr.7	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 50	Average: 52.00
+fr.8	General Quality: 55	Cohesion: 60	Coherence: 65	Style Consistency: 50	Terminology Consistency: 45	Average: 55.00
+fr.9	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+fr.10	General Quality: 55	Cohesion: 60	Coherence: 58	Style Consistency: 50	Terminology Consistency: 45	Average: 53.60
+fr.11	General Quality: 62	Cohesion: 60	Coherence: 65	Style Consistency: 55	Terminology Consistency: 68	Average: 62.00
+fr.12	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 50	Average: 52.00
+fr.13	General Quality: 55	Cohesion: 60	Coherence: 50	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+fr.14	General Quality: 60	Cohesion: 65	Coherence: 70	Style Consistency: 55	Terminology Consistency: 50	Average: 60.00
+fr.15	General Quality: 65	Cohesion: 60	Coherence: 70	Style Consistency: 55	Terminology Consistency: 50	Average: 60.00
+Average Scores	General Quality:	58.31	Cohesion:	56.56	Coherence:	62.81	Style Consistency:	49.69	Terminology Consistency:	50.19
+Meta	55.51

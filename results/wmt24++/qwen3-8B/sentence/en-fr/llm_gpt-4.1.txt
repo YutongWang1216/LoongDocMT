@@ -1,0 +1,18 @@
+fr.0	General Quality: 62	Cohesion: 60	Coherence: 65	Style Consistency: 58	Terminology Consistency: 70	Average: 63.00
+fr.1	General Quality: 72	Cohesion: 68	Coherence: 75	Style Consistency: 65	Terminology Consistency: 60	Average: 68.00
+fr.2	General Quality: 70	Cohesion: 65	Coherence: 75	Style Consistency: 60	Terminology Consistency: 55	Average: 65.00
+fr.3	General Quality: 65	Cohesion: 55	Coherence: 70	Style Consistency: 50	Terminology Consistency: 60	Average: 60.00
+fr.4	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 60	Terminology Consistency: 55	Average: 63.60
+fr.5	General Quality: 75	Cohesion: 70	Coherence: 78	Style Consistency: 68	Terminology Consistency: 65	Average: 71.20
+fr.6	General Quality: 87	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 80	Average: 86.80
+fr.7	General Quality: 85	Cohesion: 88	Coherence: 90	Style Consistency: 78	Terminology Consistency: 85	Average: 85.20
+fr.8	General Quality: 78	Cohesion: 75	Coherence: 80	Style Consistency: 70	Terminology Consistency: 65	Average: 73.60
+fr.9	General Quality: 88	Cohesion: 85	Coherence: 90	Style Consistency: 78	Terminology Consistency: 82	Average: 84.60
+fr.10	General Quality: 78	Cohesion: 82	Coherence: 85	Style Consistency: 75	Terminology Consistency: 70	Average: 78.00
+fr.11	General Quality: 72	Cohesion: 75	Coherence: 70	Style Consistency: 65	Terminology Consistency: 68	Average: 70.00
+fr.12	General Quality: 65	Cohesion: 60	Coherence: 65	Style Consistency: 55	Terminology Consistency: 50	Average: 59.00
+fr.13	General Quality: 68	Cohesion: 75	Coherence: 70	Style Consistency: 65	Terminology Consistency: 60	Average: 67.60
+fr.14	General Quality: 60	Cohesion: 65	Coherence: 70	Style Consistency: 55	Terminology Consistency: 50	Average: 60.00
+fr.15	General Quality: 78	Cohesion: 80	Coherence: 82	Style Consistency: 70	Terminology Consistency: 65	Average: 75.00
+Average Scores	General Quality:	73.19	Cohesion:	72.38	Coherence:	76.69	Style Consistency:	66.06	Terminology Consistency:	65.00
+Meta	70.66

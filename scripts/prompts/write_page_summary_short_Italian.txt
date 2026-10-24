@@ -1,0 +1,4 @@
+Si prega di fornire un riassunto del paragrafo indicato, conservando il più possibile le informazioni chiave. Si noti che la lunghezza del riassunto non deve superare le 50 parole.
+
+<Paragrafo>
+{text}

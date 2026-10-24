@@ -1,0 +1,61 @@
+Overkill.
+Live to one hundred, learn to one hundred.
+Since I've done an "ordinary" one with a "normal" lens, I should know better.
+Over the weekend, I will install the second completed nest box, and at that time, I will release more information.
+So I've done an "ordinary" one with a "normal" lens, I should know better.
+At least the current plan is this way.
+Now I have one nest box connected to our home's Wi-Fi.
+Another nest box needs to be connected to the internet, and that will require a lot of effort.
+Now that's done, during the day I hung up the new nest box. This is how it looks in the garden.
+However, let's take a step back for a moment. "What's inside it, anyway?" seems to be a question no one has asked.
+The top part is an ESP32 camera board with a fisheye camera and a red infrared LED light I removed from a Raspberry Pi camera.
+That unusual plastic box shape is because the nest box's side panel can rotate. I bought it that way, and couldn't modify it, so I had to design it around that.
+Because there's no power supply in the garden, the entire setup is powered by a solar panel and a 2600mAh 18650 lithium battery.
+I didn't take photos of the battery or the charger, but this is the solar panel.
+The grey box attached to the side of the nest box houses the battery.
+After charging, it can run for about 4 hours.
+I call this a "premium feature". This way, the birds have a bit of private space.
+Initially, I was unsure if the network in the garden was good enough to support this setup. The old access points I replaced last autumn certainly wouldn't work.
+The new access points have a full coverage.
+Now I'm glad I don't have to, since the WiFi coverage is good enough.
+If I were to build more camera-equipped nest boxes in the future, I might do it the same way. Especially in areas far from the house, I might need it.
+Now, the camera went offline for some reason I'm not sure about. It stopped working just an hour after sunset.
+It stopped charging just three hours before sunset, possibly due to insufficient light.
+It stopped charging possibly due to insufficient light, and three hours before sunset is a bit too short a time for it to be fully charged.
+Let's see what happens tomorrow anyway.
+I don't have battery telemetry data. I might add this feature in future versions.
+It would be great if I had a few more sensors.
+It might need a battery to at least theoretically keep it running through the whole night.
+It would be great if I had a wider-angle lens.
+It's a bit overkill to use a fisheye lens.
+But I've already browsed the components on Digikey, so I might customize a PCB specifically for this scenario.
+We'll see about that.
+And it's offline.
+That's a great start.
+According to the orientation of the solar panels installed on the house, the time that can actually be illuminated by sunlight is only about 90 minutes.
+We'll see about that.
+And it's offline.
+It's not easy to get anything done.
+It turns out that the 5V line and GND line on the USB-C splitter board I used to connect the battery charger were actually printed in reverse.
+After switching the lines over, the charging indicator light came on.
+And it's still offline, so let's wait a few minutes.
+And it's still offline.
+It seems to be stuck in a reboot cycle, triggering the WDT reset function.
+It looks like the board is a piece of junk. I've already ordered a bigger one, hoping it will solve the problem.
+We'll see what I find in the workshop.
+This is a 24V solar panel. Unfortunately, the sun's angle is too low (and there's also a tree blocking it), and the voltage dropped significantly just after I applied the load.
+It looks like I'll have to wait until tomorrow to see if this solar panel will do the job, or if I'll need to use that better one I ordered.
+According to the information on Amazon, this solar panel was purchased in 2021, with a maximum output power of 12V 1.2A.
+So either the solar panel is the problem, or my multimeter is the problem, or they changed the product page.
+Everyone, I've got some good news!
+They changed the product page, and this one I have is faulty.
+New and old product pages both call it a 12-volt 10-watt solar panel.
+This is why I don't delete old emails.
+Hey, look: it came back online about an hour ago, but only for about half a minute.
+Perhaps the solar panel charged the battery a bit, just enough to run for 38 seconds. That was a couple of hours ago.
+Guess what: it's overcast today! So I'm not sure if that possibly dodgy solar panel will be able to generate enough power to do its job.
+Wait and see.
+Latest news: the new solar panel has been installed, and it seems to be working normally now.
+Perhaps the sun will stop working after it sets, but let's wait and see anyway.
+It's interesting that I'm using Home Assistant's ping group functionality to monitor whether it's online.
+The round-trip time is about 102 milliseconds. It's not great, but it's not bad either.

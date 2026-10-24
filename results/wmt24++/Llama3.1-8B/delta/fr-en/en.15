@@ -1,0 +1,26 @@
+Imagine a very long web page with many sections (e.g., specifications on a single HTML page). If the user requests a specific section (e.g. page.html#section7), what would happen if the web server first streamed this section, then the others?
+Streaming order:
+1. HTML document from the beginning to <body>
+2. HTML for section 7
+HTML for sections 1, 2, 3, etc.
+The browser would then ensure that sections 1 to 6 are inserted above section 7 on the webpage.
+Does that sound clear? Could it be useful?
+I want to achieve the fastest rendering possible for the linked section (#section7) without having to reimplement anything with JavaScript. I just want to have a very long HTML document, but with the fastest possible rendering of linked sections. It should work with HTML.
+The content could be streamed in this way, then the browser would inject each <contents> into its <div>.
+<div id="section1"></div>
+<div id="section2"></div>
+The browser would then ensure that the sections preceding the targeted section are loaded before it on the webpage.
+<div id="section7">section 7…</div>
+<contents for="section1">section 1…</contents>
+<contents for="section2">section 2…</contents>
+and so on.
+It would be streamed out of order, but the browser would assemble the HTML document as if it were streamed in order.
+You can reorganize the documents like that even without JavaScript. You can't use the URL's hash part if you want the server to do something, but you can use query string parameters to indicate to the server which section you want to see first. To reorganize the parts, you have the option to:
+1. Using cascading style sheets
+2. Using a template with placeholders
+Yes. The issue is that the visual order (what the user sees) doesn't match the DOM order. It could be useful to have an HTML feature that allows streaming out of order, and the browser would then reorganize the DOM content in order.
+The approach with placeholders seems promising. I will try it.
+You want the browser to correct the DOM order?
+Yes, that's the idea. Section 7 would be streamed first solely to allow the user to see it as soon as possible. It would be great if it could do that without affecting the DOM order, so the browser can ensure that the obtained DOM order corresponds to the visual order.
+In other words, stream Section 7 first, but ensure that the final result (DOM and visual) is as if all sections had been streamed in order.
+Take a look at PHOOOS without JS: https://github.com/niutech/phooos

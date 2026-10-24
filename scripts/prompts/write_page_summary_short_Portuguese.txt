@@ -1,0 +1,4 @@
+Forneça um resumo do parágrafo fornecido, preservando as informações principais tanto quanto possível. Observe que o comprimento do resumo não deve exceder 50 palavras.
+
+<Parágrafo>
+{text}

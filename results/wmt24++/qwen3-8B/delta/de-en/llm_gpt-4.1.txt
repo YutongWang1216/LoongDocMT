@@ -1,0 +1,18 @@
+en.0	General Quality: 78	Cohesion: 82	Coherence: 85	Style Consistency: 75	Terminology Consistency: 88	Average: 81.60
+en.1	General Quality: 75	Cohesion: 70	Coherence: 80	Style Consistency: 65	Terminology Consistency: 60	Average: 70.00
+en.2	General Quality: 78	Cohesion: 80	Coherence: 85	Style Consistency: 75	Terminology Consistency: 92	Average: 82.00
+en.3	General Quality: 75	Cohesion: 65	Coherence: 80	Style Consistency: 70	Terminology Consistency: 80	Average: 74.00
+en.4	General Quality: 70	Cohesion: 75	Coherence: 80	Style Consistency: 65	Terminology Consistency: 60	Average: 70.00
+en.5	General Quality: 82	Cohesion: 85	Coherence: 88	Style Consistency: 80	Terminology Consistency: 90	Average: 85.00
+en.6	General Quality: 88	Cohesion: 92	Coherence: 90	Style Consistency: 85	Terminology Consistency: 95	Average: 90.00
+en.7	General Quality: 70	Cohesion: 75	Coherence: 80	Style Consistency: 85	Terminology Consistency: 65	Average: 75.00
+en.8	General Quality: 85	Cohesion: 82	Coherence: 88	Style Consistency: 80	Terminology Consistency: 92	Average: 85.40
+en.9	General Quality: 88	Cohesion: 90	Coherence: 92	Style Consistency: 85	Terminology Consistency: 95	Average: 90.00
+en.10	General Quality: 92	Cohesion: 95	Coherence: 96	Style Consistency: 93	Terminology Consistency: 90	Average: 93.20
+en.11	General Quality: 82	Cohesion: 88	Coherence: 90	Style Consistency: 75	Terminology Consistency: 85	Average: 84.00
+en.12	General Quality: 80	Cohesion: 85	Coherence: 83	Style Consistency: 78	Terminology Consistency: 92	Average: 83.60
+en.13	General Quality: 65	Cohesion: 70	Coherence: 75	Style Consistency: 60	Terminology Consistency: 70	Average: 68.00
+en.14	General Quality: 85	Cohesion: 88	Coherence: 90	Style Consistency: 80	Terminology Consistency: 82	Average: 85.00
+en.15	General Quality: 94	Cohesion: 96	Coherence: 97	Style Consistency: 95	Terminology Consistency: 93	Average: 95.00
+Average Scores	General Quality:	80.44	Cohesion:	82.38	Coherence:	86.19	Style Consistency:	77.88	Terminology Consistency:	83.06
+Meta	81.99

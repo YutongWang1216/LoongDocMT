@@ -1,0 +1,61 @@
+Perhaps a fisheye lens is too much for a birdhouse.
+You never learn from experience.
+I could have known better, since I already built one with a "normal" lens before.
+I will write more about it over the weekend once I have installed the second one.
+Let's just say the birds will have a better internet connection than I did in 2015.
+At least that's the plan.
+The box that already has a nest is using up a lot of WLAN data.
+With the other one, it's a bit more difficult for it to go online.
+Okay, I hung up the new nest box today. This is how it looks at its new spot in the garden.
+But let's go back a bit. No one is asking: "What exactly is inside?"
+On top is one of these ESP32 camera boards with a camera featuring a fisheye lens and an IR LED, which I got from a Raspberry Pi camera.
+The reason for the strange shape of this plastic box is the swiveling side panel of the birdhouse. I bought it like that and couldn't change it, so I had to build around it.
+Since there is no electricity in the garden, the whole thing is powered by a solar panel and a 2600 mAh 18650 cell.
+I didn't photograph the cell or the charger, but here is a picture of the panel.
+The battery is in the gray box attached to the side of the birdhouse.
+If it's charged, I get about 4 hours of runtime.
+That's a feature, I'd say. So the birds also get some privacy.
+At first, I wasn't sure if the internet in our garden would be sufficient for this setup. The old access points I replaced last fall wouldn't have been enough.
+But the new ones cover this area very well.
+It's almost a shame, because I had planned to install a TP-Link cpe210 on the roof and aim it downward into the garden.
+Maybe I'll do that if/when I set up more birdhouses with cameras. I probably need that in areas that are further away from the house.
+Now the camera is offline, and I don't know why. It turned off only an hour after sunset.
+Perhaps the battery didn't charge anymore three hours before sunset because there wasn't enough light.
+Or maybe less than half a day was not enough to fully charge the battery.
+I probably have to wait and see what happens tomorrow.
+I don't have telemetry for the battery. I might have to change that in the future.
+In general, a few more sensors would be a good thing, I think.
+And maybe a battery that at least theoretically is able to keep the thing running all night.
+Oh yeah, and another lens.
+Fisheye is pretty overkill.
+But I'm already looking for parts on Digikey so that I can build my own board specifically for that.
+Or maybe not. We'll see.
+And he is still offline.
+Great.
+According to the actual solar cells on the house, we only have about 90 minutes of proper sunlight.
+Let's wait another hour or two to see what happens – or maybe not.
+Still offline.
+It's never easy.
+It turned out that in the USB-C breakout board I used to connect the charger, the 5V and GND were swapped on the silkscreen.
+I swapped the cables and now the charging indicator is lit.
+The ESP didn't come online immediately. Let's wait a few minutes.
+An hour has passed and it's still offline.
+It looks like it's restarting and triggering a Tasmota reset function.
+I think the panel is just useless. I've now ordered a larger one and hope that will work.
+Look what I found in my workshop.
+A 24-V panel. Unfortunately, the sun is already so low (and partly blocked by a tree) that the value drops practically to zero as soon as I turn on the device.
+I'll probably have to wait until tomorrow to see if it's sufficient for this setup or if I need the better panel I ordered.
+According to Amazon, I bought the panel in 2021 and it is supposed to deliver 12 V at a maximum of 1.2 A.
+So either something is wrong with the panel or my multimeter, or the data has changed.
+Good news!
+You changed the data and the ones I have are wrong.
+The old one and also the new listing title call it a 12 V 10-W panel.
+That's why I never delete old emails.
+Oh look! The thing went offline about an hour ago, but came back online for about half a minute.
+Maybe the panel charged the battery just long enough for 38 seconds of runtime. It took just a little more than two hours for that.
+Guess what: It's cloudy today. I'm therefore not sure whether the (probably broken) solar panel can even generate enough power.
+Let's see.
+Update: I installed the new panel and it seems to be working now.
+It could still go offline once the sun sets, but let's give it a chance.
+Fun fact: I use the Ping integration in Home Assistant to check whether it's online or not.
+The average connection time is 102 ms. Not particularly good, but also not incredibly bad.

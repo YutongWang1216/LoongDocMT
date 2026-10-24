@@ -1,0 +1,18 @@
+de.0	General Quality: 48	Cohesion: 45	Coherence: 50	Style Consistency: 40	Terminology Consistency: 55	Average: 47.60
+de.1	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+de.2	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+de.3	General Quality: 48	Cohesion: 40	Coherence: 55	Style Consistency: 38	Terminology Consistency: 35	Average: 43.20
+de.4	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+de.5	General Quality: 55	Cohesion: 60	Coherence: 65	Style Consistency: 50	Terminology Consistency: 45	Average: 55.00
+de.6	General Quality: 72	Cohesion: 68	Coherence: 75	Style Consistency: 65	Terminology Consistency: 70	Average: 70.00
+de.7	General Quality: 60	Cohesion: 55	Coherence: 60	Style Consistency: 50	Terminology Consistency: 65	Average: 58.00
+de.8	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 40	Average: 50.00
+de.9	General Quality: 65	Cohesion: 60	Coherence: 65	Style Consistency: 55	Terminology Consistency: 60	Average: 61.00
+de.10	General Quality: 68	Cohesion: 65	Coherence: 70	Style Consistency: 55	Terminology Consistency: 75	Average: 66.60
+de.11	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 60	Average: 54.00
+de.12	General Quality: 55	Cohesion: 50	Coherence: 60	Style Consistency: 45	Terminology Consistency: 50	Average: 52.00
+de.13	General Quality: 68	Cohesion: 75	Coherence: 70	Style Consistency: 80	Terminology Consistency: 60	Average: 70.60
+de.14	General Quality: 60	Cohesion: 55	Coherence: 65	Style Consistency: 50	Terminology Consistency: 45	Average: 55.00
+de.15	General Quality: 75	Cohesion: 70	Coherence: 72	Style Consistency: 78	Terminology Consistency: 65	Average: 72.00
+Average Scores	General Quality:	59.31	Cohesion:	55.81	Coherence:	62.94	Style Consistency:	51.94	Terminology Consistency:	52.81
+Meta	56.56

@@ -1,0 +1,61 @@
+Perhaps it is a bit overkill to use a fisheye lens in the nesting box.
+Live to be old, learn to be old.
+Since I have already done one with a "normal" lens, I should be clearer.
+This weekend I will install the second nesting box, and I will publish more information then.
+Say this, the bird's internet speed in 2015 was faster than mine.
+At least for now, it is planned like this.
+There is now a nest box, which has already been connected to the home Wi-Fi.
+Another nest box that can access the internet still requires a lot of effort.
+Okay, I hung the new nest box in the daytime. Here's how it looks in the garden.
+But let's take a step back. "What's inside?" seems no one has asked yet.
+At the top is an ESP32 camera board with a fisheye camera lens and a red infrared LED light taken from a Raspberry Pi camera.
+That plastic box looks weird because the side panel of the nesting box can rotate. I bought it like this initially and couldn't change it, so I had to design it according to this situation.
+Since there is no power supply in the garden, the entire device is powered by a solar panel and a 2600mAh 18650 lithium battery.
+I didn't take a photo of the battery or the charger, but here is a photo of the solar panel.
+The gray box attached to the side of the nesting box contains the battery.
+The device can run for approximately 4 hours after being fully charged.
+I call this a "feature function". In this way, the birds also have a bit of private space.
+I was initially unsure if the garden's network was good enough to support this device. The old access points that I replaced last autumn definitely weren't.
+But the coverage range of the new access points was completely fine.
+Now, I thought about installing a TP-Link CPE210 on the roof to aim it downwards at the garden at first.
+If I were to build more nest boxes with cameras in the future, I might still do it. Especially in places far away from the house, I might need it.
+Now, the camera has gone offline for some unknown reason. It stopped working just an hour after sunset.
+Perhaps it's because of insufficient light, it stopped charging 3 hours before sunset.
+Perhaps half a day's time is not enough to fully charge it.
+Let's just see what happens tomorrow.
+I don't have battery telemetry data. I might add this function in the later versions.
+I think it would be great if I had a few more sensors.
+Perhaps I'll still need to add a battery, at least theoretically it can let it run through the entire night.
+Oh, I'd still need to change the lens.
+Fisheye lens is a bit too much for this purpose.
+But I have already browsed the components on Digikey, so I may customize a PCB specifically for this situation.
+Or maybe not. We'll see later.
+And it's still offline.
+Awesome.
+According to the direction of the solar panels installed on the house, the actual time exposed to sunlight is only about 90 minutes.
+Wait for an hour or two, see if there's any movement (or no movement).
+Still offline.
+Oh, nothing's easy.
+It turns out that the 5V line and GND line on the USB-C splitter I used to connect the battery charger were printed in reverse on the silk print.
+After switching the wires, the charging indicator light is on.
+ESP hasn't come online yet, let's wait for a few more minutes.
+One hour has passed, and it's still offline.
+It seems to have gotten stuck in a reboot loop, triggering Tasmota's reset function.
+Looks like this board is junk. I've already ordered a larger one, hopefully it will solve the problem.
+Let's see what I found in the workshop.
+This is a 24V solar panel. Unfortunately, the sun's height is too low (and there's a tree blocking it), and I just applied the load, and the voltage has dropped by a lot.
+It looks like I'll have to wait until tomorrow to see if this solar panel is enough, or if I need to use that better solar panel I ordered.
+According to Amazon's information, this solar panel was purchased in 2021, with a maximum output power of 12V 1.2A.
+So, either this solar panel is faulty, or my multimeter is faulty, or they've changed the product page.
+Hello everyone, good news!
+They've changed the product page, and the one I have is a defective one.
+The title of the new and old product pages both call it a 12V 10W solar panel.
+This is why I don't delete old emails.
+Hey, look: it recovered connection about an hour ago, but only for about half a minute.
+Perhaps the solar panel has charged the battery a bit, just enough to run for 38 seconds. It's been about two and a half hours by now.
+Guess what? It's a cloudy day today! So, I'm not sure if that solar panel (which may have been burnt out) can generate enough power to work.
+Let's just wait and see.
+Breaking news: The new solar panel is installed and it looks like it's working properly now.
+Perhaps it will stop working after the sun sets, but let's just wait and see.
+It's interesting that I'm using Home Assistant's ping group function to monitor whether it's online.
+Average round-trip time is 102 milliseconds. Not good, nor bad.

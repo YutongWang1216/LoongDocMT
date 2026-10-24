@@ -9,7 +9,6 @@ This repository releases the codes and data for the paper Loong: A Human-Like Lo
 
 ## **📣 News**
 
-- **[28/05/2026] Our code for Loong is released!**
 - **[29/05/2026] Our paper is published on arXiv: [arXiv:2605.30274](https://arxiv.org/abs/2605.30274)!**
 - **[21/08/2026]** Our paper has been accepted to EMNLP 2026 as an **oral presentation**! 🎉
 
